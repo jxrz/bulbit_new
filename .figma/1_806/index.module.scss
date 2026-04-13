@@ -1,0 +1,870 @@
+* {
+  box-sizing: border-box;
+}
+
+.bulbitHistoriaDeskto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #e8d2a8;
+  width: 1280px;
+  height: 4065px;
+
+  .main {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    padding-top: 80px;
+    row-gap: 96px;
+
+    .container2 {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      align-items: flex-start;
+      align-self: stretch;
+      justify-content: center;
+      padding-right: 304px;
+      padding-left: 304px;
+      height: 716px;
+      row-gap: 16px;
+      background-image: linear-gradient(
+          180deg,
+          #00000099 0%,
+          #0000004d 50%,
+          #00000000 100%
+        ),
+        url(../image/mnwu9n8q-kjp1h7y.png);
+      background-position: 0px -282px;
+      background-size: 100% 178.77%;
+      background-repeat: no-repeat;
+
+      .text {
+        flex-shrink: 0;
+        align-self: stretch;
+        text-align: center;
+        line-height: 20px;
+        letter-spacing: 1.4px;
+        color: #ffffff;
+        font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: UPPERCASE;
+      }
+
+      .text2 {
+        flex-shrink: 0;
+        align-self: stretch;
+        text-align: center;
+        line-height: 72px;
+        letter-spacing: -1.8px;
+        color: #ffffff;
+        font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 72px;
+        font-weight: 700;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        align-items: center;
+        align-self: stretch;
+        padding-top: 8px;
+        max-width: 672px;
+
+        .text3 {
+          flex-shrink: 0;
+          width: 672px;
+          text-align: center;
+          line-height: 28px;
+          letter-spacing: 0;
+          color: #ffffffe5;
+          font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .traditionHeritageSec {
+      display: flex;
+      position: relative;
+      flex-shrink: 0;
+      align-items: center;
+      align-self: stretch;
+      justify-content: space-between;
+      margin-right: 32px;
+      margin-left: 32px;
+      min-width: 1216px;
+      height: 720px;
+
+      .overlay {
+        position: absolute;
+        top: -26px;
+        right: -3px;
+        bottom: -6px;
+        left: 611px;
+        border-radius: 12px;
+        background: #19669a0d;
+        width: 608px;
+        height: 752px;
+        rotate: -2deg;
+      }
+
+      .autoWrapper {
+        display: flex;
+        position: relative;
+        align-items: center;
+        align-self: stretch;
+        justify-content: space-between;
+
+        .container3 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          row-gap: 24px;
+
+          .overlay2 {
+            display: inline-flex;
+            flex-shrink: 0;
+            align-items: flex-start;
+            align-self: stretch;
+            margin-right: 453px;
+            border-radius: 9999px;
+            background: #19669a1a;
+            padding: 4px 16px;
+
+            .text4 {
+              flex-shrink: 0;
+              line-height: 16px;
+              letter-spacing: 1.2px;
+              color: #19669a;
+              font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+              font-size: 12px;
+              font-weight: 700;
+              text-transform: UPPERCASE;
+            }
+          }
+
+          .aTraditionCarvedInSm {
+            flex-shrink: 0;
+            align-self: stretch;
+            line-height: 40px;
+            letter-spacing: -0.9px;
+            color: #1a1220;
+            font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+          }
+
+          .atBulbitWeHonorTheAn {
+            flex-shrink: 0;
+            align-self: stretch;
+            width: 576px;
+            line-height: 26px;
+            letter-spacing: 0;
+            color: #4d4352;
+            font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+            font-size: 16px;
+          }
+        }
+
+        .traditionalKoreanPot {
+          border-radius: 12px;
+          width: 576px;
+          height: 720px;
+          overflow: hidden;
+          background-image: url(../image/mnwu9n8q-osn6t6q.png);
+          background-position: -72px 0px;
+          background-size: 125% 100%;
+          background-repeat: no-repeat;
+          filter: drop-shadow(0px 20px 25px #0000001a)
+            drop-shadow(0px 8px 10px #0000001a);
+        }
+      }
+    }
+
+    .container7 {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      align-items: center;
+      align-self: stretch;
+      background: #f2dec0;
+      padding: 96px 32px;
+      max-width: 1280px;
+      row-gap: 64px;
+
+      .container4 {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        align-items: center;
+        align-self: stretch;
+        margin-right: 272px;
+        margin-left: 272px;
+        row-gap: 16px;
+
+        .text5 {
+          flex-shrink: 0;
+          align-self: stretch;
+          text-align: center;
+          line-height: 40px;
+          letter-spacing: -0.9px;
+          color: #1a1220;
+          font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+          font-size: 36px;
+          font-weight: 700;
+          text-transform: UPPERCASE;
+        }
+
+        .background {
+          flex-shrink: 0;
+          background: #19669a;
+          width: 80px;
+          height: 4px;
+        }
+      }
+
+      .container6 {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        align-items: center;
+        align-self: stretch;
+
+        .autoWrapper2 {
+          display: flex;
+          align-items: center;
+          align-self: stretch;
+          justify-content: space-between;
+          padding-right: 0;
+          padding-left: 0;
+
+          .overlayShadow {
+            display: flex;
+            align-items: center;
+            border-radius: 12px;
+            box-shadow: 0px 4px 6px -1px #0000001a, 0px 2px 4px -2px #0000001a;
+            overflow: hidden;
+
+            .chefExpertlyHandling {
+              position: relative;
+              width: 803px;
+              height: 288px;
+              overflow: hidden;
+              background-image: url(../image/mnwu9n8q-mccer6p.png);
+              background-position: 0px -257px;
+              background-size: 100% 278.7%;
+              background-repeat: no-repeat;
+
+              .background2 {
+                display: flex;
+                position: absolute;
+                right: 1px;
+                bottom: 0;
+                left: 0;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 32px;
+                width: 803px;
+                height: 144px;
+                background-image: linear-gradient(
+                  0deg,
+                  #000000cc 0%,
+                  #00000000 100%
+                );
+
+                .precisionSearing {
+                  flex-shrink: 0;
+                  align-self: stretch;
+                  line-height: 32px;
+                  letter-spacing: 0;
+                  color: #ffffff;
+                  font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+                  font-size: 24px;
+                  font-weight: 700;
+                }
+
+                .container5 {
+                  display: flex;
+                  flex-direction: column;
+                  flex-shrink: 0;
+                  align-items: flex-start;
+                  width: 448px;
+
+                  .text6 {
+                    flex-shrink: 0;
+                    width: 440px;
+                    line-height: 24px;
+                    letter-spacing: 0;
+                    color: #ffffffcc;
+                    font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+                    font-size: 16px;
+                  }
+                }
+              }
+            }
+          }
+
+          .overlayShadow2 {
+            display: flex;
+            align-items: center;
+            border-radius: 12px;
+            box-shadow: 0px 4px 6px -1px #0000001a, 0px 2px 4px -2px #0000001a;
+            background: #ffffff01;
+            overflow: hidden;
+
+            .closeUpOfPremiumMarb {
+              width: 389px;
+              height: 288px;
+              overflow: hidden;
+            }
+          }
+        }
+
+        .autoWrapper3 {
+          display: flex;
+          align-items: center;
+          align-self: stretch;
+          margin-top: 24px;
+          padding-right: 0;
+          padding-left: 0;
+
+          .overlayShadow3 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            border-radius: 12px;
+            box-shadow: 0px 4px 6px -1px #0000001a, 0px 2px 4px -2px #0000001a;
+            height: 288px;
+            overflow: hidden;
+
+            .background3 {
+              display: flex;
+              flex-direction: column;
+              flex-grow: 1;
+              align-items: flex-start;
+              align-self: stretch;
+              justify-content: center;
+              background: #ceb992;
+              padding: 32px;
+
+              .a900 {
+                flex-shrink: 0;
+                align-self: stretch;
+                padding: 0px 0px 16px;
+                line-height: 40px;
+                letter-spacing: 0;
+                color: #19669a;
+                font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+                font-size: 36px;
+                font-weight: 700;
+              }
+
+              .optimalTemperature {
+                flex-shrink: 0;
+                align-self: stretch;
+                padding: 0px 0px 8px;
+                line-height: 28px;
+                letter-spacing: 0;
+                color: #1a1220;
+                font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                font-weight: 700;
+              }
+
+              .theExactThermalThres {
+                flex-shrink: 0;
+                align-self: stretch;
+                width: 325px;
+                line-height: 24px;
+                letter-spacing: 0;
+                color: #4d4352;
+                font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+                font-size: 16px;
+              }
+            }
+          }
+
+          .overlayShadow4 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin-left: 24px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 6px -1px #0000001a, 0px 2px 4px -2px #0000001a;
+            background: #ffffff01;
+            height: 288px;
+            overflow: hidden;
+
+            .aVarietyOfFreshColor {
+              flex-grow: 1;
+              align-self: stretch;
+              width: 803px;
+              height: 288px;
+              overflow: hidden;
+            }
+          }
+        }
+      }
+    }
+
+    .qualityIngredientsSe {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      align-self: stretch;
+      margin-right: 32px;
+      margin-left: 32px;
+
+      .container16 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-top: 131px;
+        padding-bottom: 131px;
+
+        .purityInEveryGrain {
+          flex-shrink: 0;
+          align-self: stretch;
+          padding: 0px 0px 24px;
+          line-height: 40px;
+          letter-spacing: -0.9px;
+          color: #1a1220;
+          font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+          font-size: 36px;
+          font-weight: 700;
+        }
+
+        .container8 {
+          display: flex;
+          flex-direction: column;
+          flex-shrink: 0;
+          align-items: flex-start;
+          align-self: stretch;
+          padding-bottom: 32px;
+
+          .ourSourcingIsUncompr {
+            flex-shrink: 0;
+            align-self: stretch;
+            width: 373px;
+            line-height: 26px;
+            letter-spacing: 0;
+            color: #4d4352;
+            font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+            font-size: 16px;
+          }
+        }
+
+        .container15 {
+          display: flex;
+          flex-direction: column;
+          flex-shrink: 0;
+          align-items: flex-start;
+          align-self: stretch;
+          row-gap: 16px;
+
+          .text7 {
+            flex-shrink: 0;
+            align-self: stretch;
+            line-height: 24px;
+            letter-spacing: 0;
+            color: #1a1220;
+            font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+          }
+
+          .container11 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: flex-start;
+            align-self: stretch;
+            column-gap: 16px;
+
+            .overlay3 {
+              display: flex;
+              flex-shrink: 0;
+              align-items: center;
+              justify-content: center;
+              border-radius: 9999px;
+              background: #66199a1a;
+              width: 48px;
+              height: 48px;
+
+              .container9 {
+                flex-shrink: 0;
+                width: 17px;
+                height: 17px;
+              }
+            }
+
+            .container10 {
+              display: inline-flex;
+              flex-direction: column;
+              flex-shrink: 0;
+              align-items: flex-start;
+
+              .text8 {
+                flex-shrink: 0;
+                align-self: stretch;
+                width: 299px;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #4d4352;
+                font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+            }
+          }
+
+          .container14 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: flex-start;
+            align-self: stretch;
+            column-gap: 16px;
+
+            .overlay4 {
+              display: flex;
+              flex-shrink: 0;
+              align-items: center;
+              justify-content: center;
+              border-radius: 9999px;
+              background: #66199a1a;
+              width: 48px;
+              height: 48px;
+
+              .container12 {
+                flex-shrink: 0;
+                width: 22px;
+                height: 19px;
+              }
+            }
+
+            .container13 {
+              display: inline-flex;
+              flex-direction: column;
+              flex-shrink: 0;
+              align-items: flex-start;
+
+              .text9 {
+                flex-shrink: 0;
+                align-self: stretch;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #4d4352;
+                font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+
+      .container17 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 48px;
+
+        .autoWrapper4 {
+          display: flex;
+          align-items: center;
+          align-self: stretch;
+          padding-right: 0;
+          padding-left: 0;
+
+          .rawHighQualityRibeye {
+            border-radius: 12px;
+            width: 389px;
+            height: 300px;
+            overflow: hidden;
+          }
+
+          .brightGreenScallions {
+            margin-left: 16px;
+            border-radius: 12px;
+            width: 389px;
+            height: 300px;
+            overflow: hidden;
+          }
+        }
+
+        .chefArrangingDelicat {
+          margin-top: 16px;
+          border-radius: 12px;
+          width: 795px;
+          height: 300px;
+          overflow: hidden;
+        }
+      }
+    }
+
+    .container19 {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      align-items: center;
+      align-self: stretch;
+      background: #1a1220;
+      padding: 96px 192px;
+      max-width: 896px;
+      row-gap: 32px;
+
+      .text10 {
+        flex-shrink: 0;
+        align-self: stretch;
+        text-align: center;
+        line-height: 48px;
+        letter-spacing: -1.2px;
+        color: #e8d2a8;
+        font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+      }
+
+      .container18 {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        align-items: center;
+        padding-bottom: 8px;
+        width: 576px;
+
+        .text11 {
+          flex-shrink: 0;
+          width: 529px;
+          text-align: center;
+          line-height: 28px;
+          letter-spacing: 0;
+          color: #ceb992;
+          font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+          font-size: 18px;
+        }
+      }
+
+      .button {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        align-self: stretch;
+        margin-right: 300px;
+        margin-left: 300px;
+        border-radius: 12px;
+        background: #19669a;
+
+        .buttonShadow {
+          display: flex;
+          flex-grow: 1;
+          align-items: center;
+          border-radius: 12px;
+          box-shadow: 0px 10px 15px -3px #0000001a, 0px 4px 6px -4px #0000001a;
+          background: #ffffff01;
+          padding: 18px 48px 19px;
+
+          .text12 {
+            line-height: 28px;
+            letter-spacing: 0;
+            color: #ffffff;
+            font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .nav {
+      display: flex;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0px 1px 2px 0px #0000000d;
+      background: #e8d2a8cc;
+      padding-right: 32px;
+      padding-left: 32px;
+      width: 1280px;
+      height: 80px;
+      backdrop-filter: blur(6px);
+
+      .text13 {
+        flex-shrink: 0;
+        line-height: 32px;
+        letter-spacing: -0.6px;
+        color: #19669a;
+        font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: UPPERCASE;
+      }
+
+      .container20 {
+        display: inline-flex;
+        flex-shrink: 0;
+        align-items: center;
+
+        .text14 {
+          flex-shrink: 0;
+          line-height: 24px;
+          letter-spacing: -0.4px;
+          color: #1a1220;
+          font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          font-weight: 700;
+        }
+
+        .linkMargin {
+          display: inline-flex;
+          flex-direction: column;
+          flex-shrink: 0;
+          align-items: flex-start;
+          padding-left: 32px;
+
+          .link {
+            display: inline-flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            align-items: flex-start;
+            align-self: stretch;
+            border-width: 0px 0px 2px;
+            border-style: solid;
+            border-color: #19669a;
+            padding-bottom: 2px;
+
+            .text15 {
+              flex-shrink: 0;
+              line-height: 24px;
+              letter-spacing: -0.4px;
+              color: #19669a;
+              font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+              font-size: 16px;
+              font-weight: 700;
+            }
+          }
+        }
+
+        .linkMargin2 {
+          display: inline-flex;
+          flex-direction: column;
+          flex-shrink: 0;
+          align-items: flex-start;
+          padding-left: 32px;
+        }
+
+        .linkContact {
+          flex-shrink: 0;
+          padding: 0px 0px 0px 32px;
+          line-height: 24px;
+          letter-spacing: -0.4px;
+          color: #1a1220;
+          font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          font-weight: 700;
+        }
+      }
+
+      .button2 {
+        display: inline-flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        background: #19669a;
+        padding: 12px 24px;
+
+        .text16 {
+          flex-shrink: 0;
+          line-height: 24px;
+          letter-spacing: 0;
+          color: #ffffff;
+          font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    background: #e8d2a8;
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    .horizontalBorder {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      align-self: stretch;
+      justify-content: space-between;
+      border-width: 1px 0px 0px;
+      border-style: solid;
+      border-color: #19669a1a;
+      padding: 47px 32px 0px;
+      max-width: 1280px;
+
+      .text18 {
+        flex-shrink: 0;
+        align-self: stretch;
+        line-height: 20px;
+        letter-spacing: 1.4px;
+        color: #1a1220b2;
+        font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        text-transform: UPPERCASE;
+      }
+
+      .container21 {
+        display: inline-flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        align-items: flex-start;
+        row-gap: 8px;
+
+        .text17 {
+          flex-shrink: 0;
+          align-self: stretch;
+          line-height: 28px;
+          letter-spacing: 0;
+          color: #19669a;
+          font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+          font-size: 18px;
+          font-weight: 700;
+        }
+      }
+
+      .container22 {
+        display: inline-flex;
+        flex-shrink: 0;
+        align-items: flex-start;
+
+        .text19 {
+          flex-shrink: 0;
+          align-self: stretch;
+          padding: 0px 0px 0px 32px;
+          line-height: 20px;
+          letter-spacing: 1.4px;
+          color: #1a1220b2;
+          font-family: "Be Vietnam Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+          font-size: 14px;
+          text-transform: UPPERCASE;
+        }
+      }
+    }
+  }
+}

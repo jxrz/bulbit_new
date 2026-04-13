@@ -1,0 +1,152 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "history": "History",
+    "contact": "Contact",
+    "reserve_table": "Reserve Table",
+    "privacy": "PRIVACY POLICY",
+    "terms": "TERMS OF SERVICE",
+    "accessibility": "ACCESSIBILITY",
+    "rights": "© 2024 BULBIT KOREAN BBQ. ALL RIGHTS RESERVED."
+  },
+  "home": {
+    "badge": "Authentic K-BBQ",
+    "title1": "Traditional Korean Flavor with a ",
+    "title2": "Modern Touch",
+    "subtitle": "Experience the ultimate culinary journey in the heart of the city. Ancestral recipes prepared with the finest cuts.",
+    "btn_menu": "View Menu",
+    "btn_reserve": "Reserve Table",
+    "specials_subtitle": "Chef's Recommendations",
+    "specials_title": "Special Dishes",
+    "view_all": "View all",
+    "view_all_dishes": "View all dishes",
+    "view_detail": "View details",
+    "promo_title": "Coming in a group or having a special event?",
+    "promo_desc": "Moments shared around the fire. We have capacity for over 30 people and exclusive VIP private rooms.",
+    "promo_btn": "Reserve your table"
+  },
+  "menu": {
+    "title": "Our Menu",
+    "subtitle": "Explore authentic flavors of Seoul.",
+    "search": "Search dish...",
+    "cat_all": "All",
+    "cat_carnes": "Meats",
+    "cat_acompanamientos": "Sides",
+    "cat_tradicionales": "Traditional",
+    "btn_add": "Add",
+    "no_results": "No dishes found matching your search."
+  },
+  "history": {
+    "badge": "Bulbit Experience",
+    "title": "Our Story",
+    "intro_title": "Traditional Roots, Modern Vision",
+    "intro_desc": "At Bulbit, we honor century-old Korean BBQ recipes, fusing them with a contemporary approach that celebrates the freshest ingredients and innovative techniques.",
+    "feat1_title": "Ingredients with Soul",
+    "feat1_desc": "We carefully select every vegetable from local farms and premium meats, ensuring each bite captures the vibrant essence of Seoul.",
+    "feat2_title": "The Art of Fire",
+    "feat2_desc": "Our charcoal grilling technique respects traditional cooking times, achieving that unmistakable smoky flavor and texture that defines us.",
+    "val1_title": "Tradition",
+    "val1_desc": "Recipes inherited through generations.",
+    "val2_title": "Innovation",
+    "val2_desc": "Unique culinary experiences.",
+    "val3_title": "Passion",
+    "val3_desc": "Love in every preparation.",
+    "val4_title": "Community",
+    "val4_desc": "A place to share."
+  },
+  "contact": {
+    "title": "Find Us in the Heart of the City",
+    "subtitle": "Experience the pinnacle of Korean BBQ at Bulbit. Whether you're planning a corporate dinner or a family celebration, we're ready to host you.",
+    "loc_title": "Our Location",
+    "phone_title": "Phone Number",
+    "hours_title": "Opening Hours",
+    "hours_desc1": "Mon - Sun: 11:30 AM - 11:00 PM",
+    "hours_desc2": "Break Time: 3:30 PM - 5:00 PM",
+    "map_btn": "Open in Google Maps",
+    "map_desc": "Free valet parking available for all guests.",
+    "form_subtitle": "Inquiry & Groups",
+    "form_title": "Request a Table",
+    "form_desc": "For groups larger than 8, please fill out the form below or call us directly.",
+    "lbl_name": "Full Name",
+    "plh_name": "John Doe",
+    "lbl_email": "Email Address",
+    "plh_email": "john@example.com",
+    "lbl_guests": "Guests",
+    "opt_guest1": "1 Guest",
+    "opt_guest2": "2 - 4 Guests",
+    "opt_guest3": "5 - 8 Guests",
+    "opt_guest4": "9+ Guests",
+    "lbl_date": "Date",
+    "lbl_time": "Time Preference",
+    "opt_time1": "Lunch (11:30 - 15:00)",
+    "opt_time2": "Dinner (17:00 - 20:00)",
+    "opt_time3": "Late Dinner (20:00 - 22:30)",
+    "lbl_msg": "Special Occasion or Requirements",
+    "plh_msg": "Allergies, birthday celebrations, or specific seating preferences...",
+    "btn_submit": "Submit Reservation Request",
+    "form_disclaimer": "By clicking submit, you agree to our booking policy. A representative will contact you via email within 24 hours to confirm availability."
+  },
+  "menu_items": {
+    "galbi": {
+      "name": "Galbi (Short Ribs)",
+      "desc": "Premium beef short ribs marinated in our secret soy, Korean pear, and garlic recipe. An unmistakable classic."
+    },
+    "bulgogi": {
+      "name": "Traditional Bulgogi",
+      "desc": "Thinly sliced ribeye marinated to perfection. The classic Korean flavor that perfectly combines sweet and savory."
+    },
+    "samgyeopsal": {
+      "name": "Samgyeopsal",
+      "desc": "Thick-cut pork belly served with sesame salt and fermented soybean paste. An authentic bite."
+    },
+    "dwaeji": {
+      "name": "Dwaeji Bulgogi",
+      "desc": "Pork marinated in spicy Gochujang sauce. Only for lovers of intense and spicy flavors."
+    },
+    "kimchi_duo": {
+      "name": "Kimchi Duo",
+      "desc": "Our homemade combination of fermented napa cabbage kimchi and radish kimchi with sesame and scallions."
+    },
+    "purple_rice": {
+      "name": "Purple Rice",
+      "desc": "Nutritious and aromatic purple rice. A traditional Korean blend of grains and black rice, steamed to perfection."
+    },
+    "banchan": {
+      "name": "Banchan Platter",
+      "desc": "Six rotating seasonal side dishes ideal for sharing and complementing your barbecue."
+    },
+    "bibimbap": {
+      "name": "Dolsot Bibimbap",
+      "desc": "Sizzling hot stone bowl rice with sautéed vegetables, beef, and a golden fried egg."
+    },
+    "kimchi_jjigae": {
+      "name": "Kimchi Jjigae",
+      "desc": "Spicy aged kimchi stew with pork belly, tofu, and scallions in a rich, deep broth."
+    },
+    "haemul_pajeon": {
+      "name": "Haemul Pajeon",
+      "desc": "Savory Korean pancake with scallions and assorted seafood, served with our special soy-vinegar dipping sauce."
+    },
+    "japchae": {
+      "name": "Japchae",
+      "desc": "Stir-fried glass noodles with seasonal vegetables, mushrooms, and aromatic sesame oil."
+    },
+    "premium_bulgogi": {
+      "name": "Premium Bulgogi",
+      "desc": "Premium thinly sliced ribeye marinated in our secret sweet and savory blend for 48 hours."
+    },
+    "badges": {
+      "popular": "POPULAR",
+      "recommended": "RECOMMENDED",
+      "natural": "NATURAL",
+      "chef_special": "CHEF'S SPECIAL",
+      "vegetarian": "VEGETARIAN",
+      "to_share": "FOR SHARING",
+      "spicy": "SPICY",
+      "seafood": "SEAFOOD",
+      "veg_option": "VEGETARIAN OPTION",
+      "chef_choice": "CHEF'S CHOICE"
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "menu": "Menú",
+    "history": "Nosotros",
+    "contact": "Reserva",
+    "reserve_table": "Reserva tu Mesa",
+    "privacy": "POLÍTICA DE PRIVACIDAD",
+    "terms": "TÉRMINOS DE SERVICIO",
+    "accessibility": "ACCESIBILIDAD",
+    "rights": "© 2024 BULBIT KOREAN BBQ. TODOS LOS DERECHOS RESERVADOS."
+  },
+  "home": {
+    "badge": "Auténtico K-BBQ",
+    "title1": "Sabor Coreano Tradicional con un ",
+    "title2": "Toque Moderno",
+    "subtitle": "Vive la experiencia culinaria definitiva en el corazón de la ciudad. Recetas ancestrales preparadas con los mejores cortes.",
+    "btn_menu": "Ver la Carta",
+    "btn_reserve": "Reservar Mesa",
+    "specials_subtitle": "Recomendaciones del Chef",
+    "specials_title": "Platos Especiales",
+    "view_all": "Ver todos",
+    "view_all_dishes": "Ver todos los platos",
+    "view_detail": "Ver detalle",
+    "promo_title": "¿Vienes en grupo o tienes un evento especial?",
+    "promo_desc": "Momentos que se comparten alrededor del fuego. Contamos con capacidad para más de 30 personas y exclusivos salones privados VIP.",
+    "promo_btn": "Reserva tu mesa"
+  },
+  "menu": {
+    "title": "Nuestra Carta",
+    "subtitle": "Explora auténticos sabores de Seúl.",
+    "search": "Buscar plato...",
+    "cat_all": "Todos",
+    "cat_carnes": "Carnes",
+    "cat_acompanamientos": "Acompañamientos",
+    "cat_tradicionales": "Tradicionales",
+    "btn_add": "Añadir",
+    "no_results": "No se encontraron platos que coincidan con tu búsqueda."
+  },
+  "history": {
+    "badge": "Bulbit Experience",
+    "title": "Nuestra Historia",
+    "intro_title": "Raíces Tradicionales, Visión Moderna",
+    "intro_desc": "En Bulbit, honramos las recetas centenarias del BBQ coreano, fusionándolas con un enfoque contemporáneo que celebra los ingredientes más frescos y técnicas innovadoras.",
+    "feat1_title": "Ingredientes con Alma",
+    "feat1_desc": "Seleccionamos cuidadosamente cada vegetal de granjas locales y carnes premium, asegurando que cada bocado capture la esencia vibrante de Seúl.",
+    "feat2_title": "El Arte del Fuego",
+    "feat2_desc": "Nuestra técnica de asado al carbón respeta los tiempos de cocción tradicionales, logrando esa textura y sabor ahumado inconfundible que nos define.",
+    "val1_title": "Tradición",
+    "val1_desc": "Recetas heredadas por generaciones.",
+    "val2_title": "Innovación",
+    "val2_desc": "Experiencias culinarias únicas.",
+    "val3_title": "Pasión",
+    "val3_desc": "Amor en cada preparación.",
+    "val4_title": "Comunidad",
+    "val4_desc": "Un lugar para compartir."
+  },
+  "contact": {
+    "title": "Encuéntranos en el corazón de la ciudad",
+    "subtitle": "Experimente el pináculo de la barbacoa coreana en Bulbit. Ya sea que esté planeando una cena corporativa o una celebración familiar, estamos listos para recibirlo.",
+    "loc_title": "Nuestra Ubicación",
+    "phone_title": "Teléfono",
+    "hours_title": "Horarios de Atención",
+    "hours_desc1": "Lun - Dom: 11:30 AM - 11:00 PM",
+    "hours_desc2": "Descanso: 3:30 PM - 5:00 PM",
+    "map_btn": "Abrir en Google Maps",
+    "map_desc": "Estacionamiento valet gratuito disponible para todos los clientes.",
+    "form_subtitle": "Grupos y Eventos",
+    "form_title": "Reserva una Mesa",
+    "form_desc": "Para grupos de más de 8 personas, complete el formulario a continuación o llámenos directamente.",
+    "lbl_name": "Nombre Completo",
+    "plh_name": "Juan Pérez",
+    "lbl_email": "Correo Electrónico",
+    "plh_email": "juan@ejemplo.com",
+    "lbl_guests": "Comensales",
+    "opt_guest1": "1 Persona",
+    "opt_guest2": "2 - 4 Personas",
+    "opt_guest3": "5 - 8 Personas",
+    "opt_guest4": "9+ Personas",
+    "lbl_date": "Fecha",
+    "lbl_time": "Preferencia de Horario",
+    "opt_time1": "Almuerzo (11:30 - 15:00)",
+    "opt_time2": "Cena (17:00 - 20:00)",
+    "opt_time3": "Cena Tarde (20:00 - 22:30)",
+    "lbl_msg": "Ocasión Especial o Requisitos",
+    "plh_msg": "Alergias, cumpleaños o preferencias de asiento...",
+    "btn_submit": "Enviar Solicitud de Reserva",
+    "form_disclaimer": "Al hacer clic en enviar, acepta nuestra política de reservas. Un representante se comunicará por correo electrónico dentro de 24h para confirmar."
+  },
+  "menu_items": {
+    "galbi": {
+      "name": "Galbi (Costillas)",
+      "desc": "Costillas de ternera premium marinadas en nuestra receta secreta de soya, pera coreana y ajo. Un clásico inconfundible."
+    },
+    "bulgogi": {
+      "name": "Bulgogi Tradicional",
+      "desc": "Finas láminas de solomillo marinadas. El clásico sabor coreano que combina dulce y salado a la perfección."
+    },
+    "samgyeopsal": {
+      "name": "Samgyeopsal",
+      "desc": "Panceta de cerdo de corte grueso servida con sal de sésamo y pasta de soya fermentada. Un bocado auténtico."
+    },
+    "dwaeji": {
+      "name": "Dwaeji Bulgogi",
+      "desc": "Cerdo marinado en salsa picante Gochujang. Solo para amantes del sabor intenso y especiado."
+    },
+    "kimchi_duo": {
+      "name": "Kimchi Duo",
+      "desc": "Nuestra combinación casera de kimchi de repollo napa fermentado y kimchi de rábano con sésamo y cebollín."
+    },
+    "purple_rice": {
+      "name": "Purple Rice",
+      "desc": "Arroz púrpura nutritivo y aromático. Mezcla tradicional coreana de granos y arroz negro, cocinado al vapor."
+    },
+    "banchan": {
+      "name": "Banchan Platter",
+      "desc": "Seis acompañamientos de temporada rotativos ideales para compartir y complementar tu barbacoa."
+    },
+    "bibimbap": {
+      "name": "Dolsot Bibimbap",
+      "desc": "Arroz en tazón de piedra caliente chisporroteante con vegetales salteados, carne de res y un huevo frito dorado."
+    },
+    "kimchi_jjigae": {
+      "name": "Kimchi Jjigae",
+      "desc": "Estofado picante de kimchi añejado con panceta de cerdo, tofu y cebollín en un caldo rico y profundo."
+    },
+    "haemul_pajeon": {
+      "name": "Haemul Pajeon",
+      "desc": "Tortilla salada coreana con cebollín y mariscos surtidos, servida con nuestra salsa dip especial de soya y vinagre."
+    },
+    "japchae": {
+      "name": "Japchae",
+      "desc": "Fideos de camote salteados con vegetales de temporada, hongos y aceite de sésamo aromático."
+    },
+    "premium_bulgogi": {
+      "name": "Bulgogi Premium",
+      "desc": "Finas láminas de solomillo premium marinado en nuestra mezcla secreta dulce y salada durante 48 horas."
+    },
+    "badges": {
+      "popular": "POPULAR",
+      "recommended": "RECOMENDADO",
+      "natural": "NATURAL",
+      "chef_special": "ESPECIAL DEL CHEF",
+      "vegetarian": "VEGETARIANO",
+      "to_share": "PARA COMPARTIR",
+      "spicy": "PICANTE",
+      "seafood": "MARISCOS",
+      "veg_option": "OPCIÓN VEGETARIANA",
+      "chef_choice": "ELECCIÓN DEL CHEF"
+    }
+  }
+}
