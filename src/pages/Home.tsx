@@ -90,7 +90,7 @@ export default function Home() {
                 <div className="relative h-48 overflow-hidden bg-secondary/20">
                   <img 
                     src={item.imageUrl} 
-                    alt={t(item.nameKey)} 
+                    alt={t(item.nameKey)}
                     className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
                   />
                   {item.badgesKeys.length > 0 && (
@@ -107,7 +107,9 @@ export default function Home() {
                     <p className="text-sm text-text-light line-clamp-2 mb-4">{t(item.descKey)}</p>
                   </div>
                   <div className="flex items-center justify-between mt-auto">
-                    <span className="text-xl font-bold text-primary">${item.price.toFixed(2)}</span>
+                    <span className="text-xl font-bold text-primary">
+                      {item.price === null ? 'Consultar' : `$${item.price.toFixed(2)}`}
+                    </span>
                     <Link to="/menu" className="text-sm font-bold text-white bg-text-dark hover:bg-primary px-4 py-2 rounded-full transition-colors shadow-sm">
                       {t('home.view_detail')}
                     </Link>

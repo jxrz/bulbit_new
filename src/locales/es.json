@@ -27,13 +27,15 @@
     "promo_btn": "Reserva tu mesa"
   },
   "menu": {
-    "title": "Nuestra Carta",
-    "subtitle": "Explora auténticos sabores de Seúl.",
+    "title": "Menú Bulbit BBQ",
+    "subtitle": "Carta informativa actualizada con los platillos y bebidas del menú oficial.",
     "search": "Buscar plato...",
     "cat_all": "Todos",
-    "cat_carnes": "Carnes",
-    "cat_acompanamientos": "Acompañamientos",
-    "cat_tradicionales": "Tradicionales",
+    "cat_entradas": "Entradas",
+    "cat_platos_fuertes": "Platos fuertes",
+    "cat_toppings": "Toppings Ramyun",
+    "cat_bebidas_alcoholicas": "Bebidas alcohólicas",
+    "cat_bebidas": "Bebidas",
     "btn_add": "Añadir",
     "no_results": "No se encontraron platos que coincidan con tu búsqueda."
   },
@@ -88,53 +90,216 @@
     "form_disclaimer": "Al hacer clic en enviar, acepta nuestra política de reservas. Un representante se comunicará por correo electrónico dentro de 24h para confirmar."
   },
   "menu_items": {
-    "galbi": {
-      "name": "Galbi (Costillas)",
-      "desc": "Costillas de ternera premium marinadas en nuestra receta secreta de soya, pera coreana y ajo. Un clásico inconfundible."
+    "kimbap": {
+      "name": "Kimbap - 김밥 (1 pers.)",
+      "desc": "Rollo coreano en alga nori con arroz sazonado, zanahoria, espinaca, nabo amarillo encurtido, surimi, salchicha de pavo, aceite de ajonjolí, pastel de pescado y semilla de ajonjolí.",
+      "includes": "Encurtido de cebolla y jalapeño en salsa de soya y 3 Banchan (de acuerdo a disponibilidad)."
     },
-    "bulgogi": {
-      "name": "Bulgogi Tradicional",
-      "desc": "Finas láminas de solomillo marinadas. El clásico sabor coreano que combina dulce y salado a la perfección."
+    "samgak_kimbap": {
+      "name": "Samgak Kimbap - 삼각김밥 (1 pers.)",
+      "desc": "Triángulo de arroz coreano envuelto en alga marina con 5 presentaciones: pollo picante, atún con mayonesa, pollo teriyaki, bulgogi de res y kimchi de verduras.",
+      "includes": "Encurtido de cebolla y jalapeño en salsa de soya."
     },
-    "samgyeopsal": {
-      "name": "Samgyeopsal",
-      "desc": "Panceta de cerdo de corte grueso servida con sal de sésamo y pasta de soya fermentada. Un bocado auténtico."
+    "arroz_al_vapor": {
+      "name": "Arroz al vapor - 밥 (1 pers.)",
+      "desc": "Arroz coreano al vapor, porción individual de 150 g."
     },
-    "dwaeji": {
-      "name": "Dwaeji Bulgogi",
-      "desc": "Cerdo marinado en salsa picante Gochujang. Solo para amantes del sabor intenso y especiado."
+    "tteokbokki": {
+      "name": "Tteokbokki - 떡볶이 (2 a 3 pers.)",
+      "desc": "Pastel de arroz bañado en salsa picante coreana ligeramente dulce con pastel de pescado, col y daepa. Agrega tu topping preferido.",
+      "includes": "4 Banchan (de acuerdo a disponibilidad)."
     },
-    "kimchi_duo": {
-      "name": "Kimchi Duo",
-      "desc": "Nuestra combinación casera de kimchi de repollo napa fermentado y kimchi de rábano con sésamo y cebollín."
+    "ramyun_para_tteokbokki": {
+      "name": "Ramyun para Tteokbokki",
+      "desc": "Agrega ramyun a tu Tteokbokki para una versión más abundante y reconfortante."
     },
-    "purple_rice": {
-      "name": "Purple Rice",
-      "desc": "Arroz púrpura nutritivo y aromático. Mezcla tradicional coreana de granos y arroz negro, cocinado al vapor."
+    "mandu_frito": {
+      "name": "Mandu frito - Goon-mandu 군만두 (1 pers.)",
+      "desc": "Empanadas coreanas rellenas de kimchi, buchu-cebollín o vegetales.",
+      "includes": "4 Banchan (de acuerdo a disponibilidad)."
     },
-    "banchan": {
-      "name": "Banchan Platter",
-      "desc": "Seis acompañamientos de temporada rotativos ideales para compartir y complementar tu barbacoa."
+    "gyeranjjim": {
+      "name": "Gyeranjjim - 계란찜 - Huevos explosivos",
+      "desc": "Huevos al vapor de textura suave, esponjosa y ligera."
     },
-    "bibimbap": {
-      "name": "Dolsot Bibimbap",
-      "desc": "Arroz en tazón de piedra caliente chisporroteante con vegetales salteados, carne de res y un huevo frito dorado."
+    "sotbap": {
+      "name": "Sotbap - 솥밥 (1 pers.)",
+      "desc": "Arroz integral, cebada integral, arroz glutinoso salvaje, sorgo, mijo y avena al vapor en olla de presión con calabaza dulce, edamame y hongo shitake.",
+      "includes": "Porción de arroz en olla de presión."
     },
-    "kimchi_jjigae": {
-      "name": "Kimchi Jjigae",
-      "desc": "Estofado picante de kimchi añejado con panceta de cerdo, tofu y cebollín en un caldo rico y profundo."
+    "shin_ramyun": {
+      "name": "Ramyun instantáneo de res picante (Shin Ramyun) - 신라면 (1 pers.)",
+      "desc": "Fideo instantáneo picante con vegetales, germen de soya y daepa. Agrega tu topping preferido.",
+      "includes": "Kimchi."
     },
-    "haemul_pajeon": {
-      "name": "Haemul Pajeon",
-      "desc": "Tortilla salada coreana con cebollín y mariscos surtidos, servida con nuestra salsa dip especial de soya y vinagre."
+    "buldak_carbo": {
+      "name": "Ramyun instantáneo Carbonara (Buldak Carbo) - 까르보불닭볶음면 (1 pers.)",
+      "desc": "Ramyun instantáneo sabor carbonara con ajonjolí. Agrega tu topping preferido.",
+      "includes": "Nabo blanco encurtido."
     },
-    "japchae": {
-      "name": "Japchae",
-      "desc": "Fideos de camote salteados con vegetales de temporada, hongos y aceite de sésamo aromático."
+    "chapaguetti": {
+      "name": "Ramyun instantáneo con salsa de soja negra Jajangmyeon (Chapaguetti) - 짜파게티 (1 pers.)",
+      "desc": "Ramyun instantáneo sabor salsa de soja negra jajangmyeon con ajonjolí. Agrega tu topping preferido.",
+      "includes": "Nabo blanco encurtido."
     },
-    "premium_bulgogi": {
-      "name": "Bulgogi Premium",
-      "desc": "Finas láminas de solomillo premium marinado en nuestra mezcla secreta dulce y salada durante 48 horas."
+    "kimchi_bukeo_haejang_guk": {
+      "name": "Kimchi Bukeo Haejang Guk - 김치 해장국",
+      "desc": "Estofado coreano picante para la resaca con germen de soya, pescado seco, kimchi y huevo frito cocido.",
+      "includes": "Arroz al vapor y 4 Banchan (de acuerdo a disponibilidad)."
+    },
+    "chadol_doenjang_jjigae": {
+      "name": "Chadol Doenjang Jjigae - 차돌 된장찌개 (1 pers.)",
+      "desc": "Estofado coreano a base de pasta de soya tipo miso con calabaza, daepa, cebolla, tofu, papas y falda de res con arroz.",
+      "includes": "Arroz al vapor y 4 Banchan (de acuerdo a disponibilidad)."
+    },
+    "dolsot_bibimbap": {
+      "name": "Dolsot Bibimbap - 돌솥 비빔밥 (1 pers.)",
+      "desc": "Olla de piedra caliente con costra de arroz crujiente, vegetales mixtos, huevo, salsa gochujang, aceite de ajonjolí y carne de res marinada.",
+      "includes": "4 Banchan (de acuerdo a disponibilidad)."
+    },
+    "sotbap_jeongsik": {
+      "name": "Sotbap Jeongsik - 솥밥 정식 (1 pers.)",
+      "desc": "Arroz integral, cebada integral, arroz glutinoso salvaje, sorgo, mijo y avena en olla de presión con calabaza dulce, edamame y hongo shitake, acompañado de bulgogi de res, daepa, zanahoria, cebolla y lechuga.",
+      "includes": "Porción de arroz en olla de presión, bulgogi de res, lechuga y 4 Banchan (de acuerdo a disponibilidad)."
+    },
+    "ttukbul": {
+      "name": "Ttukbul - 뚝배기 불고기 (1 pers.)",
+      "desc": "Estofado de bulgogi de res, cebolla, hongos setas y fideo transparente con base de salsa de soya.",
+      "includes": "Arroz al vapor y 4 Banchan (de acuerdo a disponibilidad)."
+    },
+    "samgyup_ganjang_jorim": {
+      "name": "Samgyup Ganjang Jorim - 삼겹 간장조림",
+      "desc": "Estofado de tocino de cerdo con arroz al vapor, col y cebolla en salsa de soya agridulce.",
+      "includes": "4 Banchan (de acuerdo a disponibilidad)."
+    },
+    "la_galbi_yakiniku_style": {
+      "name": "LA Galbi Yakiniku Style - 엘에이 갈비 (1 pers.)",
+      "desc": "250 g de costilla de res marinada en salsa de soya agridulce con zanahoria, cebolla y champiñón.",
+      "includes": "4 Banchan (de acuerdo a disponibilidad). Si compran 2 porciones de $350.00 incluye Gyeranjjim - Huevos explosivos."
+    },
+    "maeun_dwaeji_galbi_jjim": {
+      "name": "Maeun Dwaeji Galbi Jjim - 매운 돼지갈비찜 (2 a 3 pers.)",
+      "desc": "500 g de costilla de cerdo con salsa picante coreana, daepa, cebolla y ajo.",
+      "includes": "4 Banchan (de acuerdo a disponibilidad) y Gyeranjjim - Huevos explosivos."
+    },
+    "samgyeopsal_a_la_parrilla": {
+      "name": "Samgyeopsal a la parrilla - 삼겹살 (2 pers.)",
+      "desc": "400 g de tocino de cerdo en parrilla acompañado de germen de soya con chile en polvo coreano, nopales salteados picantes, cebolla, champiñones y kimchi.",
+      "includes": "4 Banchan (de acuerdo a disponibilidad), Gyeranjjim - Huevos explosivos y lechuga."
+    },
+    "porcion_adicional_samgyeopsal": {
+      "name": "Porción adicional de Samgyeopsal",
+      "desc": "200 g de tocino de cerdo acompañado de germen de soya con chile en polvo coreano, nopales salteados picantes, cebolla, champiñones y kimchi."
+    },
+    "galbi_kimchi_jjim_2_3": {
+      "name": "Galbi Kimchi Jjim - 돼지갈비 김치찜 (2 a 3 pers.)",
+      "desc": "5 trozos de costilla de cerdo (550 g) envueltos en kimchi con salsa de chile en polvo coreano, cebolla blanca negi y ajo.",
+      "includes": "4 Banchan (de acuerdo a disponibilidad) para 2 a 3 personas."
+    },
+    "galbi_kimchi_jjim_3_4": {
+      "name": "Galbi Kimchi Jjim - 돼지갈비 김치찜 (3 a 4 pers.)",
+      "desc": "8 trozos de costilla de cerdo (880 g) envueltos en kimchi con salsa de chile en polvo coreano, cebolla blanca negi y ajo.",
+      "includes": "4 Banchan (de acuerdo a disponibilidad) para 3 a 4 personas."
+    },
+    "golbaengi_muchim_500": {
+      "name": "Golbaengi Muchim - 골뱅이무침",
+      "desc": "Caracoles en salsa de pasta y chile rojo agridulce con cebolla blanca, pepino y cebollín, acompañados de fideos de trigo somyeon."
+    },
+    "golbaengi_muchim_700": {
+      "name": "Golbaengi Muchim Grande - 골뱅이무침",
+      "desc": "Porción grande de caracoles en salsa de pasta y chile rojo agridulce con cebolla blanca, pepino y cebollín, acompañados de fideos de trigo somyeon."
+    },
+    "topping_tteok": {
+      "name": "Tteok - 떡 (pastel de arroz)",
+      "desc": "15 piezas. Pastel de arroz, solamente para Ramyun de res picante."
+    },
+    "topping_huevo": {
+      "name": "Huevo - 계란 (gyeran)",
+      "desc": "1 pieza. Huevo cocido o frito para Ramyun."
+    },
+    "topping_arroz": {
+      "name": "Arroz al vapor - 밥 (Bap)",
+      "desc": "1 porción individual de 150 g."
+    },
+    "topping_queso": {
+      "name": "Queso (amarillo o manchego)",
+      "desc": "1 porción de 15 a 20 g para Ramyun."
+    },
+    "topping_elote": {
+      "name": "Elote - 옥수수 (ogsusu)",
+      "desc": "1 porción de 20 g."
+    },
+    "topping_cebollin": {
+      "name": "Cebollín",
+      "desc": "1 porción de 5 g deshidratado."
+    },
+    "soju": {
+      "name": "Soju - 360 ml (varios sabores)",
+      "desc": "Botella de 360 ml."
+    },
+    "cerveza_nacional": {
+      "name": "Cerveza nacional - 355 ml",
+      "desc": "Presentación de 355 ml."
+    },
+    "makgeolli": {
+      "name": "Makgeolli - 750 ml",
+      "desc": "Sabores: durazno, fresa, uva y banana. Presentación de 750 ml."
+    },
+    "bokboonja": {
+      "name": "Bokboonja - 375 ml",
+      "desc": "Presentación de 375 ml."
+    },
+    "tequila_don_julio": {
+      "name": "Tequila Don Julio",
+      "desc": "Botella de tequila premium."
+    },
+    "sake_ozeki": {
+      "name": "Sake Ozeki - 750 ml",
+      "desc": "Presentación de 750 ml. Precio sujeto a confirmación."
+    },
+    "coca_cola": {
+      "name": "Refresco de lata - Coca-Cola",
+      "desc": "Lata de 350 ml."
+    },
+    "sprite": {
+      "name": "Refresco de lata - Sprite",
+      "desc": "Lata de 350 ml."
+    },
+    "fanta": {
+      "name": "Refresco de lata - Fanta",
+      "desc": "Lata de 350 ml."
+    },
+    "coca_cola_zero": {
+      "name": "Refresco de lata - Coca-Cola Zero",
+      "desc": "Lata de 235 ml."
+    },
+    "agua": {
+      "name": "Agua",
+      "desc": "Botella de 500 ml."
+    },
+    "hata_ramune": {
+      "name": "Hata Ramune",
+      "desc": "Bebida japonesa gaseosa."
+    },
+    "bebida_arroz_coreana": {
+      "name": "Bebida de arroz coreana",
+      "desc": "Presentación de 238 ml."
+    },
+    "bebida_canela_coreana": {
+      "name": "Bebida de canela coreana",
+      "desc": "Presentación de 238 ml."
+    },
+    "bebida_coreana": {
+      "name": "Bebida coreana",
+      "desc": "Bebida tradicional coreana."
+    },
+    "bong_bong": {
+      "name": "Bong Bong",
+      "desc": "Presentación de 238 ml."
+    },
+    "aloe_vera": {
+      "name": "Aloe Vera",
+      "desc": "Bebida de 500 ml."
     },
     "badges": {
       "popular": "POPULAR",

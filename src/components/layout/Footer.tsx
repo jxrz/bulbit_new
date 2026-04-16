@@ -7,8 +7,12 @@ export default function Footer() {
     <footer className="bg-surface border-t border-primary/10 py-8 md:py-12 pb-24 md:pb-12">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <Link to="/">
-            <img src="/logo.jpeg" alt="Bulbit Logo" className="h-10 object-contain mix-blend-multiply" />
+          <Link to="/" className="rounded-2xl bg-white px-4 py-2 shadow-soft ring-1 ring-primary/10">
+            <img
+              src="/logotipo.png"
+              alt="Bulbit Korean BBQ"
+              className="h-12 md:h-14 w-auto max-w-[210px] md:max-w-[260px] object-contain"
+            />
           </Link>
           
           <div className="flex flex-wrap justify-center gap-6 text-xs font-semibold text-text-light">

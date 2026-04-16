@@ -20,8 +20,12 @@ export default function Header() {
   return (
     <header className="fixed w-full top-0 z-50 bg-secondary/90 backdrop-blur-md border-b border-primary/10">
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
-          <img src="/logo.jpeg" alt="Bulbit Logo" className="h-10 md:h-12 object-contain mix-blend-multiply" />
+        <Link to="/" className="flex items-center rounded-2xl bg-white/80 px-4 py-2 shadow-soft ring-1 ring-primary/10 backdrop-blur-sm">
+          <img
+            src="/logotipo.png"
+            alt="Bulbit Korean BBQ"
+            className="h-11 md:h-14 w-auto max-w-[200px] md:max-w-[260px] object-contain"
+          />
         </Link>
 
         {/* Desktop Nav */}
