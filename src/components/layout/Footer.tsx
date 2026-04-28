@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <Link to="/" className="px-4 py-2">
             <img
-              src="/logotipo.png"
+              src="/logo_beige.webp"
               alt="Bulbit Korean BBQ"
               className="h-12 md:h-14 w-auto max-w-[210px] md:max-w-[260px] object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.45)]"
             />
