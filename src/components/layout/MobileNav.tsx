@@ -15,7 +15,7 @@ export default function MobileNav() {
   ];
 
   return (
-    <div className="md:hidden fixed bottom-0 left-0 w-full bg-surface/90 backdrop-blur-md border-t border-primary/10 z-50 shadow-[0px_-4px_20px_0px_rgba(0,0,0,0.05)]">
+    <div className="md:hidden fixed bottom-0 left-0 z-50 w-full border-t border-secondary/20 bg-[#120d0be8] backdrop-blur-md shadow-[0px_-10px_32px_0px_rgba(0,0,0,0.45)]">
       <div className="flex justify-around items-center h-20 px-2 pb-safe">
         {links.map((link) => {
           const Icon = link.icon;
@@ -27,7 +27,7 @@ export default function MobileNav() {
               to={link.path}
               className={clsx(
                 "flex flex-col items-center justify-center w-16 h-full gap-1 transition-colors",
-                isActive ? "text-primary" : "text-text-light hover:text-text"
+                isActive ? "text-secondary-light" : "text-secondary/65 hover:text-secondary-light"
               )}
             >
               <Icon size={20} strokeWidth={isActive ? 2.5 : 2} />

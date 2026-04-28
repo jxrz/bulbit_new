@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 export default function Home() {
   const { t } = useTranslation();
   const specials = menuItems.filter(item => item.isPopular).slice(0, 4);
+  const heroItems = specials.slice(0, 2);
 
   return (
     <>
@@ -17,136 +18,177 @@ export default function Home() {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none bg-black">
-          <iframe
-            className="absolute top-1/2 left-1/2 w-[100vw] h-[56.25vw] min-h-[100vh] min-w-[177.77vh] -translate-x-1/2 -translate-y-1/2 opacity-90"
-            src="https://www.youtube.com/embed/5CwtUWEXc6g?autoplay=1&mute=1&loop=1&playlist=5CwtUWEXc6g&controls=0&showinfo=0&rel=0&playsinline=1"
-            allow="autoplay; encrypted-media"
-            title="Korean BBQ Promo Video"
-          ></iframe>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/30"></div>
-        </div>
-        
-        <div className="container relative z-10 text-center px-4 mt-10">
+      <section className="relative overflow-hidden border-b border-secondary/15">
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage:
+              "linear-gradient(120deg, rgba(20,15,13,0.92), rgba(20,15,13,0.72)), radial-gradient(circle at top right, rgba(18,59,88,0.45), transparent 28%), radial-gradient(circle at bottom left, rgba(155,51,35,0.55), transparent 32%), url('/background.webp')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        />
+        <div className="absolute inset-0 bg-[linear-gradient(135deg,transparent_0%,rgba(243,231,206,0.06)_48%,transparent_48%,transparent_100%)] opacity-60" />
+
+        <div className="container relative z-10 mx-auto grid min-h-[82vh] max-w-6xl items-center gap-10 px-4 py-16 md:py-24 lg:grid-cols-[1.1fr_0.9fr]">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="max-w-3xl mx-auto flex flex-col items-center"
+            transition={{ duration: 0.7 }}
+            className="brand-panel-dark rounded-[34px] p-7 md:p-10 brand-glow"
           >
-            <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-wider text-white bg-primary rounded-full uppercase shadow-lg">
+            <span className="brand-kicker inline-flex rounded-full border border-secondary/25 bg-secondary/10 px-4 py-1.5 text-[11px] font-bold text-secondary-light">
               {t('home.badge')}
             </span>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-md">
-              {t('home.title1')} <span className="text-secondary">{t('home.title2')}</span>
+            <h1 className="brand-display mt-6 text-5xl font-black leading-[0.95] text-secondary-light md:text-7xl">
+              {t('home.title1')}
+              <span className="mt-3 block text-primary-light">{t('home.title2')}</span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl drop-shadow">
+            <p className="mt-6 max-w-2xl text-base leading-7 text-secondary/90 md:text-lg">
               {t('home.subtitle')}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
-              <Link 
-                to="/menu" 
-                className="flex items-center justify-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-dark transition-all hover:scale-105 shadow-lg"
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+              <Link
+                to="/menu"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-primary/30 bg-primary px-8 py-4 text-lg font-bold text-secondary-light transition-all hover:bg-primary-dark"
               >
                 <BookOpen size={20} />
                 {t('home.btn_menu')}
               </Link>
-              <Link 
-                to="/contact" 
-                className="flex items-center justify-center gap-2 bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-full font-bold text-lg hover:bg-white/20 transition-all hover:scale-105 shadow-lg"
+              <Link
+                to="/contact"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-secondary/25 bg-secondary/10 px-8 py-4 text-lg font-bold text-secondary-light transition-all hover:bg-secondary/15"
               >
                 <Calendar size={20} />
                 {t('home.btn_reserve')}
               </Link>
             </div>
           </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7, delay: 0.15 }}
+            className="relative flex min-h-[420px] items-center justify-center"
+          >
+            <div className="absolute inset-0 -rotate-3 rounded-[36px] border border-secondary/10 bg-primary/15" />
+            <div className="absolute inset-6 rotate-2 rounded-[30px] border border-[#1f5a86]/30 bg-[#173d60]/20" />
+            {heroItems.map((item, index) => (
+              <div
+                key={item.id}
+                className={`brand-panel absolute w-[88%] max-w-md overflow-hidden rounded-[30px] ${index === 0 ? '-rotate-3 md:-translate-x-8 md:-translate-y-10' : 'rotate-3 md:translate-x-10 md:translate-y-10'}`}
+              >
+                <div className="relative h-52 overflow-hidden bg-text-dark">
+                  <img src={item.imageUrl} alt={t(item.nameKey)} className="h-full w-full object-cover object-center" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#120d0bd9] to-transparent" />
+                  <div className="absolute left-4 top-4 rounded-full bg-primary px-3 py-1 text-xs font-bold uppercase tracking-[0.2em] text-secondary-light">
+                    Bulbit
+                  </div>
+                </div>
+                <div className="space-y-3 p-5">
+                  <div className="flex items-start justify-between gap-4">
+                    <h3 className="text-xl font-black uppercase leading-tight text-text-dark">{t(item.nameKey)}</h3>
+                    <span className="shrink-0 rounded-full bg-text-dark px-3 py-1.5 text-sm font-bold text-secondary-light">
+                      {item.price === null ? 'Consultar' : `$${item.price.toFixed(2)}`}
+                    </span>
+                  </div>
+                  <p className="line-clamp-3 text-sm leading-6 text-text">
+                    {t(item.descKey)}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </motion.div>
         </div>
       </section>
 
       {/* Specials Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20">
         <div className="container px-4 mx-auto max-w-6xl">
-          <div className="flex justify-between items-end mb-10">
-            <div>
-              <p className="text-sm font-bold text-primary tracking-widest uppercase mb-2">{t('home.specials_subtitle')}</p>
-              <h2 className="text-3xl md:text-4xl font-bold text-text-dark">{t('home.specials_title')}</h2>
+          <div className="brand-panel-dark rounded-[34px] p-6 md:p-10">
+            <div className="mb-10 flex items-end justify-between gap-4">
+              <div>
+                <p className="brand-kicker mb-3 text-sm font-bold text-secondary">{t('home.specials_subtitle')}</p>
+                <h2 className="brand-display text-3xl font-black text-secondary-light md:text-4xl">{t('home.specials_title')}</h2>
+              </div>
+              <Link to="/menu" className="hidden items-center gap-1 font-semibold text-secondary-light transition-colors hover:text-secondary sm:flex">
+                {t('home.view_all')} <ArrowRight size={16} />
+              </Link>
             </div>
-            <Link to="/menu" className="hidden sm:flex items-center gap-1 text-primary font-semibold hover:text-primary-dark transition-colors">
-              {t('home.view_all')} <ArrowRight size={16} />
-            </Link>
-          </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {specials.map((item, index) => (
-              <motion.div
-                key={item.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-surface rounded-2xl overflow-hidden shadow-soft group cursor-pointer flex flex-col border border-primary/5"
-              >
-                <div className="relative h-48 overflow-hidden bg-secondary/20">
-                  <img 
-                    src={item.imageUrl} 
-                    alt={t(item.nameKey)}
-                    className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
-                  />
-                  {item.badgesKeys.length > 0 && (
-                    <div className="absolute top-3 left-3 flex flex-wrap gap-2">
-                      <span className="px-2.5 py-1 text-[10px] font-bold text-primary bg-white/90 backdrop-blur-sm rounded-full shadow-sm">
-                        {t(item.badgesKeys[0])}
-                      </span>
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {specials.map((item, index) => (
+                <motion.div
+                  key={item.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="brand-panel group flex flex-col overflow-hidden rounded-[28px] border border-primary/15 transition-all hover:-translate-y-1 hover:shadow-soft"
+                >
+                  <div className="relative h-48 overflow-hidden bg-text-dark">
+                    <img
+                      src={item.imageUrl}
+                      alt={t(item.nameKey)}
+                      className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#120d0bbf] to-transparent" />
+                    {item.badgesKeys.length > 0 && (
+                      <div className="absolute top-3 left-3 flex flex-wrap gap-2">
+                        <span className="rounded-full bg-primary px-2.5 py-1 text-[10px] font-bold text-secondary-light shadow-sm">
+                          {t(item.badgesKeys[0])}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                  <div className="flex flex-grow flex-col justify-between p-5">
+                    <div>
+                      <h3 className="mb-2 text-lg font-black uppercase text-text-dark">{t(item.nameKey)}</h3>
+                      <p className="mb-4 line-clamp-2 text-sm text-text-light">{t(item.descKey)}</p>
                     </div>
-                  )}
-                </div>
-                <div className="p-5 flex-grow flex flex-col justify-between">
-                  <div>
-                    <h3 className="text-lg font-bold text-text-dark mb-1">{t(item.nameKey)}</h3>
-                    <p className="text-sm text-text-light line-clamp-2 mb-4">{t(item.descKey)}</p>
+                    <div className="mt-auto flex items-center justify-between">
+                      <span className="rounded-full bg-text-dark px-3.5 py-1.5 text-base font-bold text-secondary-light">
+                        {item.price === null ? 'Consultar' : `$${item.price.toFixed(2)}`}
+                      </span>
+                      <Link to="/menu" className="rounded-full bg-primary px-4 py-2 text-sm font-bold text-secondary-light transition-colors hover:bg-primary-dark">
+                        {t('home.view_detail')}
+                      </Link>
+                    </div>
                   </div>
-                  <div className="flex items-center justify-between mt-auto">
-                    <span className="text-xl font-bold text-primary">
-                      {item.price === null ? 'Consultar' : `$${item.price.toFixed(2)}`}
-                    </span>
-                    <Link to="/menu" className="text-sm font-bold text-white bg-text-dark hover:bg-primary px-4 py-2 rounded-full transition-colors shadow-sm">
-                      {t('home.view_detail')}
-                    </Link>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-          
-          <div className="mt-8 text-center sm:hidden">
-            <Link to="/menu" className="inline-flex items-center gap-2 text-primary font-bold hover:text-primary-dark transition-colors">
-              {t('home.view_all_dishes')} <ArrowRight size={16} />
-            </Link>
+                </motion.div>
+              ))}
+            </div>
+
+            <div className="mt-8 text-center sm:hidden">
+              <Link to="/menu" className="inline-flex items-center gap-2 font-bold text-secondary-light transition-colors hover:text-secondary">
+                {t('home.view_all_dishes')} <ArrowRight size={16} />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Promo Banner */}
-      <section className="py-12 md:py-24 bg-surface">
+      <section className="py-12 md:py-24">
         <div className="container px-4 mx-auto max-w-5xl">
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative bg-gradient-to-r from-primary/10 to-secondary/20 border border-primary/10 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 overflow-hidden"
+            className="brand-panel-dark relative flex flex-col items-center justify-between gap-8 overflow-hidden rounded-[34px] p-8 md:flex-row md:p-12"
           >
-            <div className="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-64 h-64 bg-secondary/10 rounded-full blur-3xl"></div>
+            <div className="absolute right-0 top-0 -mr-20 -mt-20 h-64 w-64 rounded-full bg-primary/20 blur-3xl"></div>
+            <div className="absolute bottom-0 left-0 -mb-20 -ml-20 h-64 w-64 rounded-full bg-[#123b58]/30 blur-3xl"></div>
             
             <div className="flex-1 text-center md:text-left relative z-10">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-text-dark mb-4">{t('home.promo_title')}</h2>
-              <p className="text-text-light md:text-lg max-w-2xl">{t('home.promo_desc')}</p>
+              <p className="brand-kicker mb-3 text-sm font-bold text-secondary">{t('home.specials_subtitle')}</p>
+              <h2 className="brand-display mb-4 text-2xl font-black text-secondary-light md:text-3xl lg:text-4xl">{t('home.promo_title')}</h2>
+              <p className="max-w-2xl text-secondary/80 md:text-lg">{t('home.promo_desc')}</p>
             </div>
             <Link 
               to="/contact" 
-              className="relative z-10 flex-shrink-0 flex items-center gap-3 bg-primary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-dark transition-transform hover:-translate-y-1 shadow-[0_10px_25px_-5px_rgba(25,102,154,0.4)]"
+              className="relative z-10 flex shrink-0 items-center gap-3 rounded-full border border-secondary/25 bg-primary px-8 py-4 text-lg font-bold text-secondary-light transition-transform hover:-translate-y-1 hover:bg-primary-dark"
             >
               <Calendar size={24} />
               {t('home.promo_btn')}

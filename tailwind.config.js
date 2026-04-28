@@ -10,28 +10,28 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#19669a",
-          dark: "#14517a",
-          light: "#1f80c2",
+          DEFAULT: "#9b3323",
+          dark: "#6f2217",
+          light: "#c64b33",
         },
         secondary: {
-          DEFAULT: "#e8d2a8",
-          light: "#f3e8d2",
-          dark: "#d1b47c",
+          DEFAULT: "#dcc29a",
+          light: "#f3e7ce",
+          dark: "#b7925d",
         },
-        background: "#f7f6f8",
-        surface: "#ffffff",
+        background: "#140f0d",
+        surface: "#efe2cd",
         text: {
-          DEFAULT: "#334155",
-          dark: "#0f172a",
-          light: "#64748b",
+          DEFAULT: "#4d382d",
+          dark: "#211510",
+          light: "#8a7160",
         },
       },
       fontFamily: {
         sans: ['"Be Vietnam Pro"', "sans-serif"],
       },
       boxShadow: {
-        soft: "0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1)",
+        soft: "0 18px 40px -22px rgba(0, 0, 0, 0.65)",
       }
     },
   },

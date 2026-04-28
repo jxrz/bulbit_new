@@ -61,13 +61,14 @@ export default function History() {
       </section>
 
       {/* Intro Section */}
-      <section className="py-16 md:py-24 bg-secondary/10">
+      <section className="py-16 md:py-24">
         <div className="container px-4 mx-auto max-w-4xl text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            className="brand-panel rounded-[34px] px-6 py-10 md:px-10"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
               {t('history.intro_title')}
@@ -80,7 +81,7 @@ export default function History() {
       </section>
 
       {/* Features Sections */}
-      <section className="py-16 md:py-24 bg-background">
+      <section className="py-16 md:py-24">
         <div className="container px-4 mx-auto max-w-5xl">
           <div className="flex flex-col gap-16 md:gap-24">
             
@@ -96,8 +97,8 @@ export default function History() {
                 <img src="/src/assets/images/mnwu9n4v-uootlu2.png" alt="Ingredientes frescos" className="w-full h-[300px] md:h-[400px] object-cover hover:scale-105 transition-transform duration-700" />
               </div>
               <div className="w-full md:w-1/2 text-center md:text-left">
-                <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">{t('history.feat1_title')}</h3>
-                <p className="text-text-light text-lg">
+                <h3 className="brand-display text-2xl md:text-3xl font-black text-secondary-light mb-4">{t('history.feat1_title')}</h3>
+                <p className="text-secondary/80 text-lg">
                   {t('history.feat1_desc')}
                 </p>
               </div>
@@ -115,8 +116,8 @@ export default function History() {
                 <img src="/src/assets/images/mnwu9n4v-c03zqu6.png" alt="Técnica de asado al carbón" className="w-full h-[300px] md:h-[400px] object-cover hover:scale-105 transition-transform duration-700" />
               </div>
               <div className="w-full md:w-1/2 text-center md:text-left">
-                <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">{t('history.feat2_title')}</h3>
-                <p className="text-text-light text-lg">
+                <h3 className="brand-display text-2xl md:text-3xl font-black text-secondary-light mb-4">{t('history.feat2_title')}</h3>
+                <p className="text-secondary/80 text-lg">
                   {t('history.feat2_desc')}
                 </p>
               </div>
@@ -127,7 +128,7 @@ export default function History() {
       </section>
 
       {/* Values Grid */}
-      <section className="py-16 md:py-24 bg-primary text-white">
+      <section className="py-16 md:py-24 bg-primary/90 text-white">
         <div className="container px-4 mx-auto max-w-5xl">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
             {values.map((value, index) => (
@@ -137,7 +138,7 @@ export default function History() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="flex flex-col items-center text-center gap-4 p-6"
+                className="flex flex-col items-center gap-4 rounded-[28px] border border-secondary/15 bg-black/10 p-6 text-center"
               >
                 <div className="bg-white/10 p-4 rounded-2xl backdrop-blur-sm border border-white/20">
                   <img src={value.icon} alt={value.title} className="w-10 h-10 md:w-12 md:h-12 brightness-0 invert" />

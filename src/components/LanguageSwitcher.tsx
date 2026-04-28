@@ -31,14 +31,14 @@ export default function LanguageSwitcher() {
     <div className="relative" ref={dropdownRef}>
       <button 
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-1 text-sm font-semibold text-text hover:text-primary transition-colors"
+        className="flex items-center gap-1 text-sm font-semibold text-secondary-light hover:text-white transition-colors"
       >
         <Globe size={18} />
         {languages.find(lang => lang.code === currentLang)?.label || 'ES'}
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 py-2 w-24 bg-surface rounded-xl shadow-soft border border-primary/10 flex flex-col z-50">
+        <div className="absolute right-0 z-50 mt-2 flex w-24 flex-col rounded-xl border border-secondary/20 bg-[#1a120f] py-2 shadow-soft">
           {languages.map((lang) => (
             <button
               key={lang.code}
@@ -47,8 +47,8 @@ export default function LanguageSwitcher() {
                 setIsOpen(false);
               }}
               className={clsx(
-                "px-4 py-2 text-sm text-left hover:bg-primary/5 transition-colors",
-                currentLang === lang.code ? "text-primary font-bold" : "text-text"
+                "px-4 py-2 text-left text-sm transition-colors hover:bg-secondary/10",
+                currentLang === lang.code ? "font-bold text-secondary-light" : "text-secondary/90"
               )}
             >
               {lang.label}

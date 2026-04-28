@@ -18,13 +18,13 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed w-full top-0 z-50 bg-secondary/90 backdrop-blur-md border-b border-primary/10">
+    <header className="fixed w-full top-0 z-50 border-b border-secondary/20 bg-[#120d0be3] backdrop-blur-md shadow-[0_12px_40px_-22px_rgba(0,0,0,0.9)]">
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center px-4 py-2">
           <img
-            src="/logotipo.png"
+            src="/logo_beige.webp"
             alt="Bulbit Korean BBQ"
-            className="h-11 md:h-14 w-auto max-w-[200px] md:max-w-[260px] object-contain"
+            className="h-11 md:h-14 w-auto max-w-[200px] md:max-w-[260px] object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.45)]"
           />
         </Link>
 
@@ -35,8 +35,8 @@ export default function Header() {
               key={link.path}
               to={link.path}
               className={clsx(
-                "text-sm font-semibold transition-colors hover:text-primary",
-                location.pathname === link.path ? "text-primary" : "text-text"
+                "text-sm font-semibold transition-colors hover:text-secondary-light",
+                location.pathname === link.path ? "text-secondary-light" : "text-secondary/90"
               )}
             >
               {link.name}
@@ -46,7 +46,7 @@ export default function Header() {
 
         <div className="hidden md:flex items-center gap-6">
           <LanguageSwitcher />
-          <Link to="/contact" className="bg-primary text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-primary-dark transition-colors shadow-soft">
+          <Link to="/contact" className="rounded-full border border-secondary/25 bg-primary px-6 py-2.5 text-sm font-bold text-secondary-light transition-colors hover:bg-primary-dark shadow-soft">
             {t('nav.reserve_table')}
           </Link>
         </div>
@@ -54,15 +54,15 @@ export default function Header() {
         {/* Mobile Menu Toggle */}
         <div className="md:hidden flex items-center gap-4">
           <LanguageSwitcher />
-          <button className="p-2" onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <X className="text-primary" /> : <Menu className="text-primary" />}
+          <button className="p-2 text-secondary-light" onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? <X className="text-secondary-light" /> : <Menu className="text-secondary-light" />}
           </button>
         </div>
       </div>
 
       {/* Mobile Nav Dropdown */}
       {isOpen && (
-        <div className="md:hidden absolute top-20 left-0 w-full bg-surface shadow-soft border-b border-primary/10 py-4 px-4 flex flex-col gap-4">
+        <div className="md:hidden absolute top-20 left-0 w-full border-b border-secondary/20 bg-[#17100dcc] px-4 py-4 shadow-soft backdrop-blur-md flex flex-col gap-4">
           {links.map((link) => (
             <Link
               key={link.path}
@@ -70,7 +70,7 @@ export default function Header() {
               onClick={() => setIsOpen(false)}
               className={clsx(
                 "text-lg font-semibold py-2",
-                location.pathname === link.path ? "text-primary" : "text-text"
+                location.pathname === link.path ? "text-secondary-light" : "text-secondary/90"
               )}
             >
               {link.name}
@@ -79,7 +79,7 @@ export default function Header() {
           <Link
             to="/contact"
             onClick={() => setIsOpen(false)}
-            className="bg-primary text-white text-center px-6 py-3 rounded-full font-bold mt-2 shadow-soft"
+            className="mt-2 rounded-full border border-secondary/25 bg-primary px-6 py-3 text-center font-bold text-secondary-light shadow-soft"
           >
             {t('nav.reserve_table')}
           </Link>

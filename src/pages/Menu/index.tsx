@@ -73,24 +73,25 @@ export default function Menu() {
         <meta name="description" content={t('menu.subtitle')} />
       </Helmet>
 
-      <div className="bg-background min-h-screen py-8 md:py-16">
+      <div className="min-h-screen py-8 md:py-16">
         <div className="container px-4 mx-auto max-w-6xl">
           {/* Header & Search */}
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-10">
+          <div className="brand-panel-dark mb-10 flex flex-col gap-6 rounded-[34px] p-6 md:flex-row md:items-center md:justify-between md:p-8">
             <div>
-              <h1 className="text-3xl md:text-5xl font-bold text-text-dark mb-2">{t('menu.title')}</h1>
-              <p className="text-text-light">{t('menu.subtitle')}</p>
+              <p className="brand-kicker mb-3 text-xs font-bold text-secondary">{t('home.badge')}</p>
+              <h1 className="brand-display mb-2 text-3xl font-black text-secondary-light md:text-5xl">{t('menu.title')}</h1>
+              <p className="max-w-2xl text-secondary/90">{t('menu.subtitle')}</p>
             </div>
             <div className="w-full md:w-80 relative">
               <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                <Search size={20} className="text-text-light" />
+                <Search size={20} className="text-text" />
               </div>
               <input 
                 type="text" 
                 placeholder={t('menu.search')} 
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-11 pr-4 py-3 bg-surface border border-primary/10 rounded-full focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all shadow-sm"
+                className="w-full rounded-full border border-secondary/30 bg-surface/95 py-3 pl-11 pr-4 text-text-dark placeholder:text-text-light focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all shadow-sm"
               />
             </div>
           </div>
@@ -102,10 +103,10 @@ export default function Menu() {
                 key={category.id}
                 onClick={() => setActiveCategory(category.id)}
                 className={clsx(
-                  "whitespace-nowrap px-6 py-2.5 rounded-full font-bold text-sm transition-all shadow-sm",
+                  "whitespace-nowrap rounded-full border px-6 py-2.5 text-sm font-bold transition-all shadow-sm",
                   activeCategory === category.id 
-                    ? "bg-primary text-white" 
-                    : "bg-surface text-text hover:bg-primary/5 border border-primary/10"
+                    ? "border-primary/40 bg-primary text-secondary-light" 
+                    : "border-secondary/25 bg-[#201612] text-secondary/95 hover:bg-primary/20 hover:text-secondary-light"
                 )}
               >
                 {category.name}
@@ -124,18 +125,18 @@ export default function Menu() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 18 }}
                   transition={{ duration: 0.28 }}
-                  className="rounded-[28px] border border-primary/10 bg-surface/80 p-5 md:p-7 shadow-soft"
+                  className="brand-panel rounded-[28px] p-5 md:p-7 shadow-soft"
                 >
                   {(() => {
                     const isCompactSection = compactSectionIds.has(section.id);
 
                     return (
                       <>
-                  <div className={clsx('mb-6 rounded-3xl bg-gradient-to-r px-5 py-4', section.accent)}>
+                  <div className={clsx('mb-6 rounded-[26px] bg-gradient-to-r px-5 py-4', section.accent, 'from-primary/25 via-secondary/45 to-[#123b58]/20')}>
                     <div className="flex flex-col gap-1 md:flex-row md:items-end md:justify-between">
                       <div>
-                        <h2 className="text-2xl md:text-3xl font-bold text-text-dark">{t(section.titleKey)}</h2>
-                        <p className="text-sm text-text-light">
+                        <h2 className="brand-display text-2xl font-black text-text-dark md:text-3xl">{t(section.titleKey)}</h2>
+                        <p className="text-sm font-medium text-text-light">
                           {section.items.length} {section.items.length === 1 ? 'opción disponible' : 'opciones disponibles'}
                         </p>
                       </div>
@@ -146,7 +147,7 @@ export default function Menu() {
                     layout
                     className={clsx(
                       isCompactSection
-                        ? 'overflow-hidden rounded-3xl border border-primary/10 bg-white'
+                        ? 'overflow-hidden rounded-[28px] border border-primary/10 bg-surface/95'
                         : 'grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3'
                     )}
                   >
@@ -175,14 +176,14 @@ export default function Menu() {
                                   {item.badgesKeys.map((badgeKey) => (
                                     <span
                                       key={badgeKey}
-                                      className="rounded-full bg-primary/8 px-2 py-0.5 text-[10px] font-bold text-primary"
+                                    className="rounded-full bg-primary/10 px-2 py-0.5 text-[10px] font-bold text-primary"
                                     >
                                       {t(badgeKey)}
                                     </span>
                                   ))}
                                 </div>
 
-                                <p className="text-sm leading-6 text-text-light">
+                                <p className="text-sm leading-6 text-text">
                                   {itemDesc}
                                 </p>
 
@@ -194,7 +195,7 @@ export default function Menu() {
                               </div>
 
                               <div className="shrink-0 md:pl-6">
-                                <div className="inline-flex rounded-full bg-primary/8 px-3.5 py-1.5 text-sm font-bold text-primary">
+                                <div className="inline-flex rounded-full bg-text-dark px-3.5 py-1.5 text-sm font-bold text-secondary-light">
                                   {item.price === null ? 'Consultar' : `$${item.price.toFixed(2)}`}
                                 </div>
                               </div>
@@ -211,16 +212,16 @@ export default function Menu() {
                           animate={{ opacity: 1, scale: 1 }}
                           exit={{ opacity: 0, scale: 0.98 }}
                           transition={{ duration: 0.25 }}
-                          className="group overflow-hidden rounded-3xl border border-primary/10 bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-soft"
+                          className="brand-panel group overflow-hidden rounded-[28px] border border-primary/10 shadow-sm transition-all hover:-translate-y-1 hover:shadow-soft"
                         >
-                          <div className="relative h-44 overflow-hidden bg-secondary/10">
+                          <div className="relative h-44 overflow-hidden bg-text-dark">
                             <img
                               src={item.imageUrl}
                               alt={itemName}
                               className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                             />
-                            <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/45 to-transparent" />
-                            <div className="absolute right-4 top-4 rounded-full bg-white/92 px-3 py-1.5 text-sm font-bold text-primary shadow-sm">
+                            <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#120d0be6] to-transparent" />
+                            <div className="absolute right-4 top-4 rounded-full bg-primary px-3 py-1.5 text-sm font-bold text-secondary-light shadow-sm">
                               {item.price === null ? 'Consultar' : `$${item.price.toFixed(2)}`}
                             </div>
                             {item.badgesKeys.length > 0 && (
@@ -228,7 +229,7 @@ export default function Menu() {
                                 {item.badgesKeys.map((badgeKey) => (
                                   <span
                                     key={badgeKey}
-                                    className="rounded-full bg-white/90 px-2.5 py-1 text-[10px] font-bold text-primary backdrop-blur-sm shadow-sm"
+                                    className="rounded-full bg-secondary-light/95 px-2.5 py-1 text-[10px] font-bold text-primary backdrop-blur-sm shadow-sm"
                                   >
                                     {t(badgeKey)}
                                   </span>
@@ -242,7 +243,7 @@ export default function Menu() {
                               {itemName}
                             </h3>
 
-                            <p className="mb-4 text-sm leading-6 text-text-light">
+                            <p className="mb-4 text-sm leading-6 text-text">
                               {itemDesc}
                             </p>
 

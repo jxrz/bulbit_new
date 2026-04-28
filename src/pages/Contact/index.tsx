@@ -44,7 +44,7 @@ ${formData.message}
         <meta name="description" content={t('contact.subtitle')} />
       </Helmet>
 
-      <div className="bg-background min-h-screen py-8 md:py-16">
+      <div className="min-h-screen py-8 md:py-16">
         <div className="container px-4 mx-auto max-w-6xl">
           
           {/* Header */}
@@ -54,8 +54,8 @@ ${formData.message}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-dark mb-4">{t('contact.title')}</h1>
-              <p className="text-lg text-text-light max-w-2xl">
+              <h1 className="brand-display mb-4 text-4xl font-black text-secondary-light md:text-5xl lg:text-6xl">{t('contact.title')}</h1>
+              <p className="max-w-2xl text-lg text-secondary/80">
                 {t('contact.subtitle')}
               </p>
             </motion.div>
@@ -71,7 +71,7 @@ ${formData.message}
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="bg-surface rounded-3xl p-6 md:p-8 shadow-soft border border-primary/5 flex flex-col gap-8"
+                className="brand-panel rounded-[30px] p-6 shadow-soft flex flex-col gap-8 md:p-8"
               >
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center text-primary">
@@ -117,12 +117,12 @@ ${formData.message}
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="relative h-64 bg-primary/90 rounded-3xl overflow-hidden shadow-soft flex items-center justify-center border border-primary/20"
+                className="relative flex h-64 items-center justify-center overflow-hidden rounded-[30px] border border-secondary/20 bg-primary/90 shadow-soft"
                 style={{ backgroundImage: "url('/src/assets/images/mnwu9n10-ab9ky05.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}
               >
                 <div className="absolute inset-0 bg-primary/60 mix-blend-multiply"></div>
                 <div className="relative z-10 flex flex-col items-center">
-                  <div className="bg-white px-6 py-3 rounded-full shadow-lg flex items-center gap-2 text-primary font-bold hover:scale-105 transition-transform cursor-pointer">
+                  <div className="flex cursor-pointer items-center gap-2 rounded-full bg-surface px-6 py-3 font-bold text-primary shadow-lg transition-transform hover:scale-105">
                     <Navigation size={18} />
                     {t('contact.map_btn')}
                   </div>
@@ -137,7 +137,7 @@ ${formData.message}
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="bg-surface rounded-3xl p-6 md:p-10 shadow-soft border border-primary/5"
+                className="brand-panel rounded-[30px] p-6 shadow-soft md:p-10"
               >
                 <div className="mb-8">
                   <p className="text-xs font-bold text-primary uppercase tracking-widest mb-2">{t('contact.form_subtitle')}</p>
