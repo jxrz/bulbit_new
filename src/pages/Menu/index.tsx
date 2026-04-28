@@ -1,8 +1,9 @@
-import { useState, useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search } from 'lucide-react';
+import { BookOpen } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 import { menuItems } from '@/data/menu';
 
@@ -31,7 +32,6 @@ function cleanMenuText(text: string) {
 export default function Menu() {
   const { t } = useTranslation();
   const [activeCategory, setActiveCategory] = useState('all');
-  const [searchQuery, setSearchQuery] = useState('');
 
   const categories = [
     { id: 'all', name: t('menu.cat_all') },
@@ -42,15 +42,8 @@ export default function Menu() {
   ];
 
   const filteredItems = useMemo(() => {
-    return menuItems.filter(item => {
-      const matchesCategory = activeCategory === 'all' || item.category === activeCategory;
-      const matchesSearch =
-        t(item.nameKey).toLowerCase().includes(searchQuery.toLowerCase()) ||
-        t(item.descKey).toLowerCase().includes(searchQuery.toLowerCase()) ||
-        (item.includesKey ? t(item.includesKey).toLowerCase().includes(searchQuery.toLowerCase()) : false);
-      return matchesCategory && matchesSearch;
-    });
-  }, [activeCategory, searchQuery, t]);
+    return menuItems.filter((item) => activeCategory === 'all' || item.category === activeCategory);
+  }, [activeCategory]);
 
   const visibleSections = useMemo(() => {
     if (activeCategory !== 'all') {
@@ -75,24 +68,30 @@ export default function Menu() {
 
       <div className="min-h-screen py-8 md:py-16">
         <div className="container px-4 mx-auto max-w-6xl">
-          {/* Header & Search */}
+          {/* Header & Visual Menu CTA */}
           <div className="brand-panel-dark mb-10 flex flex-col gap-6 rounded-[34px] p-6 md:flex-row md:items-center md:justify-between md:p-8">
             <div>
               <p className="brand-kicker mb-3 text-xs font-bold text-secondary">{t('home.badge')}</p>
               <h1 className="brand-display mb-2 text-3xl font-black text-secondary-light md:text-5xl">{t('menu.title')}</h1>
               <p className="max-w-2xl text-secondary/90">{t('menu.subtitle')}</p>
             </div>
-            <div className="w-full md:w-80 relative">
-              <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                <Search size={20} className="text-text" />
-              </div>
-              <input 
-                type="text" 
-                placeholder={t('menu.search')} 
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full rounded-full border border-secondary/30 bg-surface/95 py-3 pl-11 pr-4 text-text-dark placeholder:text-text-light focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all shadow-sm"
-              />
+            <div className="w-full md:max-w-sm">
+              <Link
+                to="/menu/visual"
+                className="group flex w-full items-center gap-4 rounded-[28px] border border-secondary/20 bg-secondary/10 p-4 text-left transition-all hover:-translate-y-0.5 hover:border-secondary/35 hover:bg-secondary/15"
+              >
+                <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-primary text-secondary-light shadow-sm transition-transform group-hover:scale-105">
+                  <BookOpen size={24} />
+                </span>
+                <span className="min-w-0 flex-1">
+                  <span className="block text-base font-black uppercase tracking-[0.18em] text-secondary-light">
+                    {t('menu.visual_cta')}
+                  </span>
+                  <span className="mt-1 block text-sm leading-5 text-secondary/75">
+                    {t('menu.visual_cta_caption')}
+                  </span>
+                </span>
+              </Link>
             </div>
           </div>
 

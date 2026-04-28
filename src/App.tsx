@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Layout from "@/components/layout/Layout";
 import Home from "@/pages/Home";
 import Menu from "@/pages/Menu";
+import MenuVisual from "@/pages/MenuVisual";
 import History from "@/pages/History";
 import Contact from "@/pages/Contact";
 
@@ -24,6 +25,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
+          <Route path="/menu/visual" element={<MenuVisual />} />
           <Route path="/history" element={<History />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
