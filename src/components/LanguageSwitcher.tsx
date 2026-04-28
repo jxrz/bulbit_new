@@ -12,6 +12,7 @@ export default function LanguageSwitcher() {
     { code: 'es', label: 'ES' },
     { code: 'en', label: 'EN' },
     { code: 'ko', label: 'KR' },
+    { code: 'zh', label: '中文' },
   ];
 
   useEffect(() => {

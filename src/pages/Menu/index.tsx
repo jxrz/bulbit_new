@@ -7,8 +7,11 @@ import clsx from 'clsx';
 import { menuItems } from '@/data/menu';
 
 const menuSections = [
-  { id: 'entradas', titleKey: 'menu.cat_entradas', accent: 'from-primary/15 to-primary/5' },
-  { id: 'platos_fuertes', titleKey: 'menu.cat_platos_fuertes', accent: 'from-secondary/30 to-primary/5' },
+  { id: 'samgyeopsal', titleKey: 'menu.cat_samgyeopsal', accent: 'from-primary/15 to-primary/5' },
+  { id: 'sets', titleKey: 'menu.cat_sets', accent: 'from-secondary/30 to-primary/5' },
+  { id: 'para_compartir', titleKey: 'menu.cat_para_compartir', accent: 'from-primary/10 to-secondary/15' },
+  { id: 'para_uno', titleKey: 'menu.cat_para_uno', accent: 'from-secondary/25 to-primary/10' },
+  { id: 'ramen', titleKey: 'menu.cat_ramen', accent: 'from-primary/10 to-secondary/20' },
   { id: 'toppings', titleKey: 'menu.cat_toppings', accent: 'from-primary/10 to-secondary/15' },
   { id: 'bebidas_alcoholicas', titleKey: 'menu.cat_bebidas_alcoholicas', accent: 'from-primary/15 to-red-500/5' },
   { id: 'bebidas', titleKey: 'menu.cat_bebidas', accent: 'from-secondary/25 to-sky-100/40' },

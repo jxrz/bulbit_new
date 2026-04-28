@@ -20,7 +20,7 @@ export default function Header() {
   return (
     <header className="fixed w-full top-0 z-50 bg-secondary/90 backdrop-blur-md border-b border-primary/10">
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-        <Link to="/" className="flex items-center rounded-2xl bg-white/80 px-4 py-2 shadow-soft ring-1 ring-primary/10 backdrop-blur-sm">
+        <Link to="/" className="flex items-center px-4 py-2">
           <img
             src="/logotipo.png"
             alt="Bulbit Korean BBQ"

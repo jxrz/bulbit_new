@@ -1,0 +1,320 @@
+{
+  "nav": {
+    "home": "首页",
+    "menu": "菜单",
+    "history": "关于我们",
+    "contact": "预订",
+    "reserve_table": "预订餐桌",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "accessibility": "无障碍声明",
+    "rights": "© 2026 BULBIT KOREAN BBQ. 版权所有。"
+  },
+  "home": {
+    "badge": "正宗韩式烧烤",
+    "title1": "传统韩式风味，融入",
+    "title2": "现代新意",
+    "subtitle": "在城市中心体验极致美食之旅。以精选上等肉品重现传承已久的经典配方。",
+    "btn_menu": "查看菜单",
+    "btn_reserve": "预订座位",
+    "specials_subtitle": "主厨推荐",
+    "specials_title": "特色菜品",
+    "view_all": "查看全部",
+    "view_all_dishes": "查看全部菜品",
+    "view_detail": "查看详情",
+    "promo_title": "多人聚餐或有特别活动？",
+    "promo_desc": "围炉共享的美好时刻。我们可接待 30 人以上团体，并提供专属 VIP 包厢。",
+    "promo_btn": "立即预订"
+  },
+  "menu": {
+    "title": "Bulbit BBQ 菜单",
+    "subtitle": "官方菜单中的菜品与饮品信息现已更新。",
+    "search": "搜索菜品...",
+    "cat_all": "全部",
+    "cat_samgyeopsal": "五花肉",
+    "cat_sets": "套餐",
+    "cat_para_compartir": "共享",
+    "cat_para_uno": "单人份",
+    "cat_ramen": "拉面",
+    "cat_toppings": "拉面配料",
+    "cat_bebidas_alcoholicas": "酒精饮品",
+    "cat_bebidas": "饮品",
+    "btn_add": "添加",
+    "no_results": "没有找到符合搜索条件的菜品。"
+  },
+  "history": {
+    "badge": "Bulbit Experience",
+    "title": "我们的故事",
+    "intro_title": "传统根基，现代视野",
+    "intro_desc": "在 Bulbit，我们尊重韩式烧烤的百年食谱，并以现代视角融合最新鲜的食材与创新技法。",
+    "feat1_title": "有灵魂的食材",
+    "feat1_desc": "我们精心挑选每一种蔬菜与优质肉品，确保每一口都能呈现首尔风味的鲜活精髓。",
+    "feat2_title": "火候的艺术",
+    "feat2_desc": "我们的炭火烧烤技法遵循传统火候，呈现出标志性的烟熏香气与完美口感。",
+    "val1_title": "传统",
+    "val1_desc": "代代相传的经典食谱。",
+    "val2_title": "创新",
+    "val2_desc": "独一无二的餐饮体验。",
+    "val3_title": "热情",
+    "val3_desc": "每一道料理都满载用心。",
+    "val4_title": "社群",
+    "val4_desc": "适合相聚与分享的空间。"
+  },
+  "contact": {
+    "title": "在城市中心找到我们",
+    "subtitle": "在 Bulbit 体验韩式烧烤的巅峰风味。无论您计划商务晚宴还是家庭聚会，我们都已准备好迎接您。",
+    "loc_title": "我们的地址",
+    "phone_title": "电话",
+    "hours_title": "营业时间",
+    "hours_desc1": "周一至周日：11:30 AM - 11:00 PM",
+    "hours_desc2": "休息时间：3:30 PM - 5:00 PM",
+    "map_btn": "在 Google 地图打开",
+    "map_desc": "所有顾客均可享受免费代客泊车服务。",
+    "form_subtitle": "团体与活动",
+    "form_title": "预订餐桌",
+    "form_desc": "如需预订 8 人以上团体，请填写下方表单或直接致电我们。",
+    "lbl_name": "姓名",
+    "plh_name": "张伟",
+    "lbl_email": "电子邮箱",
+    "plh_email": "zhang@example.com",
+    "lbl_guests": "用餐人数",
+    "opt_guest1": "1 人",
+    "opt_guest2": "2 - 4 人",
+    "opt_guest3": "5 - 8 人",
+    "opt_guest4": "9 人以上",
+    "lbl_date": "日期",
+    "lbl_time": "偏好时段",
+    "opt_time1": "午餐 (11:30 - 15:00)",
+    "opt_time2": "晚餐 (17:00 - 20:00)",
+    "opt_time3": "晚间时段 (20:00 - 22:30)",
+    "lbl_msg": "特殊场合或需求",
+    "plh_msg": "过敏、生日或座位偏好...",
+    "btn_submit": "发送预订申请",
+    "form_disclaimer": "点击发送即表示您接受我们的预订政策。工作人员将在 24 小时内通过电子邮件与您联系确认。"
+  },
+  "menu_items": {
+    "kimbap": {
+      "name": "Kimbap - 紫菜包饭 김밥 (1人份)",
+      "desc": "韩式紫菜包饭，内含调味米饭、胡萝卜、菠菜、腌黄萝卜、蟹肉棒、火鸡香肠、芝麻油、鱼板与芝麻。",
+      "includes": "附酱油洋葱与墨西哥辣椒腌菜，以及 3 款韩式小菜（视供应情况而定）。"
+    },
+    "samgak_kimbap": {
+      "name": "Samgak Kimbap - 三角饭团 삼각김밥 (1人份)",
+      "desc": "韩式三角饭团，包裹海苔，共有 5 种口味：辣鸡、金枪鱼蛋黄酱、照烧鸡、牛肉烤肉和蔬菜泡菜。",
+      "includes": "附酱油洋葱与墨西哥辣椒腌菜。"
+    },
+    "arroz_al_vapor": {
+      "name": "蒸米饭 - 밥 (1人份)",
+      "desc": "韩式蒸米饭，单人份 150 克。"
+    },
+    "tteokbokki": {
+      "name": "Tteokbokki - 韩式辣炒年糕 떡볶이 (2至3人份)",
+      "desc": "年糕裹上微甜韩式辣酱，搭配鱼板、卷心菜和大葱。可添加你喜欢的配料。",
+      "includes": "附 4 款韩式小菜（视供应情况而定）。"
+    },
+    "ramyun_para_tteokbokki": {
+      "name": "Tteokbokki 加拉面",
+      "desc": "为你的辣炒年糕加上拉面，口感更丰富、更有满足感。"
+    },
+    "mandu_frito": {
+      "name": "炸 Mandu - Goon-mandu 军馒头 군만두 (1人份)",
+      "desc": "韩式煎炸饺子，内馅可选泡菜、韭菜葱或蔬菜。",
+      "includes": "附 4 款韩式小菜（视供应情况而定）。"
+    },
+    "gyeranjjim": {
+      "name": "Gyeranjjim - 韩式蒸蛋 계란찜",
+      "desc": "口感柔软、蓬松轻盈的韩式蒸蛋。"
+    },
+    "sotbap": {
+      "name": "Sotbap - 釜饭 솥밥 (1人份)",
+      "desc": "高压锅蒸煮的杂粮饭，含糙米、大麦、野生糯米、高粱、小米和燕麦，搭配南瓜、毛豆与香菇。",
+      "includes": "附一份锅煮杂粮饭。"
+    },
+    "shin_ramyun": {
+      "name": "辣牛肉方便拉面 (Shin Ramyun) - 신라면 (1人份)",
+      "desc": "辛辣方便拉面，搭配蔬菜、豆芽和大葱。可添加你喜欢的配料。",
+      "includes": "附泡菜。"
+    },
+    "buldak_carbo": {
+      "name": "奶油辣鸡拉面 (Buldak Carbo) - 까르보불닭볶음면 (1人份)",
+      "desc": "碳烤奶油风味的韩式即食拉面，撒有芝麻。可添加你喜欢的配料。",
+      "includes": "附腌白萝卜。"
+    },
+    "chapaguetti": {
+      "name": "韩式黑豆酱拉面 (Chapaguetti) - 짜파게티 (1人份)",
+      "desc": "黑豆酱风味即食拉面，搭配芝麻。可添加你喜欢的配料。",
+      "includes": "附腌白萝卜。"
+    },
+    "kimchi_bukeo_haejang_guk": {
+      "name": "Kimchi Bukeo Haejang Guk - 泡菜醒酒汤 김치 해장국",
+      "desc": "辣味韩式醒酒汤，含豆芽、干鱼、泡菜与熟煎蛋。",
+      "includes": "附蒸米饭和 4 款韩式小菜（视供应情况而定）。"
+    },
+    "chadol_doenjang_jjigae": {
+      "name": "Chadol Doenjang Jjigae - 牛五花大酱汤 차돌 된장찌개 (1人份)",
+      "desc": "以韩式大酱为底的炖汤，加入南瓜、大葱、洋葱、豆腐、土豆和牛五花，配米饭。",
+      "includes": "附蒸米饭和 4 款韩式小菜（视供应情况而定）。"
+    },
+    "dolsot_bibimbap": {
+      "name": "Dolsot Bibimbap - 石锅拌饭 돌솥 비빔밥 (1人份)",
+      "desc": "热石锅拌饭，带香脆锅巴，搭配杂菜、鸡蛋、韩式辣椒酱、芝麻油和腌制牛肉。",
+      "includes": "附 4 款韩式小菜（视供应情况而定）。"
+    },
+    "sotbap_jeongsik": {
+      "name": "Sotbap Jeongsik - 釜饭定食 솥밥 정식 (1人份)",
+      "desc": "高压锅杂粮饭，含糙米、大麦、野生糯米、高粱、小米和燕麦，搭配南瓜、毛豆和香菇，并配有牛肉烤肉、大葱、胡萝卜、洋葱与生菜。",
+      "includes": "附锅煮杂粮饭、牛肉烤肉、生菜和 4 款韩式小菜（视供应情况而定）。"
+    },
+    "ttukbul": {
+      "name": "Ttukbul - 砂锅烤牛肉 뚝배기 불고기 (1人份)",
+      "desc": "以酱油为底的韩式牛肉烤肉炖菜，搭配洋葱、蘑菇和粉丝。",
+      "includes": "附蒸米饭和 4 款韩式小菜（视供应情况而定）。"
+    },
+    "samgyup_ganjang_jorim": {
+      "name": "Samgyup Ganjang Jorim - 酱烧五花肉 삼겹 간장조림",
+      "desc": "五花肉炖煮料理，配蒸米饭、卷心菜和洋葱，佐酸甜酱油汁。",
+      "includes": "附 4 款韩式小菜（视供应情况而定）。"
+    },
+    "la_galbi_yakiniku_style": {
+      "name": "LA Galbi Yakiniku Style - 洛杉矶牛小排 엘에이 갈비 (1人份)",
+      "desc": "250 克牛小排，以酸甜酱油腌制，搭配胡萝卜、洋葱和蘑菇。",
+      "includes": "附 4 款韩式小菜（视供应情况而定）。若购买 2 份 350.00 的套餐，另附 Gyeranjjim 韩式蒸蛋。"
+    },
+    "maeun_dwaeji_galbi_jjim": {
+      "name": "Maeun Dwaeji Galbi Jjim - 辣炖猪排骨 매운 돼지갈비찜 (2至3人份)",
+      "desc": "500 克猪排骨，搭配韩式辣酱、大葱、洋葱和大蒜。",
+      "includes": "附 4 款韩式小菜（视供应情况而定）以及 Gyeranjjim 韩式蒸蛋。"
+    },
+    "samgyeopsal_a_la_parrilla": {
+      "name": "Samgyeopsal a la parrilla - 烤五花肉 삼겹살 (2人份)",
+      "desc": "400 克五花肉烧烤，搭配韩式辣椒粉豆芽、香辣炒仙人掌、洋葱、蘑菇和泡菜。",
+      "includes": "附 4 款韩式小菜（视供应情况而定）、Gyeranjjim 韩式蒸蛋和生菜。"
+    },
+    "porcion_adicional_samgyeopsal": {
+      "name": "Samgyeopsal 加点份",
+      "desc": "200 克五花肉，搭配韩式辣椒粉豆芽、香辣炒仙人掌、洋葱、蘑菇和泡菜。"
+    },
+    "galbi_kimchi_jjim_2_3": {
+      "name": "Galbi Kimchi Jjim - 泡菜炖猪排骨 돼지갈비 김치찜 (2至3人份)",
+      "desc": "5 块猪排骨（550 克），包裹泡菜并加入韩式辣椒粉酱、白葱和蒜慢炖而成。",
+      "includes": "附 4 款韩式小菜（视供应情况而定），适合 2 至 3 人。"
+    },
+    "galbi_kimchi_jjim_3_4": {
+      "name": "Galbi Kimchi Jjim - 泡菜炖猪排骨 돼지갈비 김치찜 (3至4人份)",
+      "desc": "8 块猪排骨（880 克），包裹泡菜并加入韩式辣椒粉酱、白葱和蒜慢炖而成。",
+      "includes": "附 4 款韩式小菜（视供应情况而定），适合 3 至 4 人。"
+    },
+    "golbaengi_muchim_500": {
+      "name": "Golbaengi Muchim - 拌海螺 골뱅이무침",
+      "desc": "海螺拌入甜辣红椒酱，配白洋葱、黄瓜、葱花和小麦面。"
+    },
+    "golbaengi_muchim_700": {
+      "name": "Golbaengi Muchim 大份 - 拌海螺 골뱅이무침",
+      "desc": "大份海螺拌甜辣红椒酱，配白洋葱、黄瓜、葱花和小麦面。"
+    },
+    "topping_tteok": {
+      "name": "Tteok - 年糕 떡",
+      "desc": "15 个。年糕，仅适用于辣牛肉拉面。"
+    },
+    "topping_huevo": {
+      "name": "鸡蛋 - 계란 (gyeran)",
+      "desc": "1 个。可为拉面添加水煮蛋或煎蛋。"
+    },
+    "topping_arroz": {
+      "name": "蒸米饭 - 밥 (Bap)",
+      "desc": "1 份 150 克单人米饭。"
+    },
+    "topping_queso": {
+      "name": "奶酪（黄奶酪或曼切戈）",
+      "desc": "1 份 15 至 20 克，适用于拉面。"
+    },
+    "topping_elote": {
+      "name": "玉米 - 옥수수 (ogsusu)",
+      "desc": "1 份 20 克。"
+    },
+    "topping_cebollin": {
+      "name": "香葱",
+      "desc": "1 份 5 克脱水香葱。"
+    },
+    "soju": {
+      "name": "烧酒 - 360 ml（多种口味）",
+      "desc": "360 毫升瓶装。"
+    },
+    "cerveza_nacional": {
+      "name": "国产啤酒 - 355 ml",
+      "desc": "355 毫升装。"
+    },
+    "makgeolli": {
+      "name": "马格利酒 - 750 ml",
+      "desc": "口味有桃子、草莓、葡萄和香蕉。750 毫升装。"
+    },
+    "bokboonja": {
+      "name": "覆盆子酒 Bokboonja - 375 ml",
+      "desc": "375 毫升装。"
+    },
+    "tequila_don_julio": {
+      "name": "Don Julio 龙舌兰",
+      "desc": "高端龙舌兰整瓶。"
+    },
+    "sake_ozeki": {
+      "name": "Ozeki 清酒 - 750 ml",
+      "desc": "750 毫升装，价格需确认。"
+    },
+    "coca_cola": {
+      "name": "罐装汽水 - 可口可乐",
+      "desc": "350 毫升罐装。"
+    },
+    "sprite": {
+      "name": "罐装汽水 - 雪碧",
+      "desc": "350 毫升罐装。"
+    },
+    "fanta": {
+      "name": "罐装汽水 - 芬达",
+      "desc": "350 毫升罐装。"
+    },
+    "coca_cola_zero": {
+      "name": "罐装汽水 - 零度可口可乐",
+      "desc": "235 毫升罐装。"
+    },
+    "agua": {
+      "name": "矿泉水",
+      "desc": "500 毫升瓶装。"
+    },
+    "hata_ramune": {
+      "name": "Hata Ramune",
+      "desc": "日式汽水饮料。"
+    },
+    "bebida_arroz_coreana": {
+      "name": "韩式米饮",
+      "desc": "238 毫升装。"
+    },
+    "bebida_canela_coreana": {
+      "name": "韩式肉桂饮",
+      "desc": "238 毫升装。"
+    },
+    "bebida_coreana": {
+      "name": "韩式传统饮品",
+      "desc": "韩式传统风味饮料。"
+    },
+    "bong_bong": {
+      "name": "Bong Bong",
+      "desc": "238 毫升装。"
+    },
+    "aloe_vera": {
+      "name": "芦荟饮料",
+      "desc": "500 毫升装。"
+    },
+    "badges": {
+      "popular": "人气",
+      "recommended": "推荐",
+      "natural": "天然",
+      "chef_special": "主厨特选",
+      "vegetarian": "素食",
+      "to_share": "适合分享",
+      "spicy": "辣味",
+      "seafood": "海鲜",
+      "veg_option": "可选素食",
+      "chef_choice": "主厨之选"
+    }
+  }
+}

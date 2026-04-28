@@ -5,6 +5,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import es from './locales/es.json';
 import en from './locales/en.json';
 import ko from './locales/ko.json';
+import zh from './locales/zh.json';
 
 i18n
   .use(LanguageDetector)
@@ -14,6 +15,7 @@ i18n
       es: { translation: es },
       en: { translation: en },
       ko: { translation: ko },
+      zh: { translation: zh },
     },
     lng: 'es', // Force Spanish as the default language
     fallbackLng: 'es',
