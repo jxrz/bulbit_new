@@ -50,12 +50,12 @@
     "visual_autoplay_stop": "Pausar reproducción automática",
     "visual_slide_label": "Página {{current}} de {{total}}",
     "cat_all": "Todos",
-    "cat_samgyeopsal": "Samgyeopsal",
-    "cat_sets": "Sets",
+    "cat_samgyeopsal": "A la Parrilla",
+    "cat_sets": "Especialidades",
     "cat_para_compartir": "Para compartir",
     "cat_para_uno": "Para uno",
     "cat_ramen": "Ramen",
-    "cat_toppings": "Toppings Ramyun",
+    "cat_toppings": "Topping para ramen",
     "cat_bebidas_alcoholicas": "Bebidas alcohólicas",
     "cat_bebidas": "Bebidas",
     "btn_add": "Añadir",
@@ -136,12 +136,12 @@
       "desc": "Agrega ramyun a tu Tteokbokki para una versión más abundante y reconfortante."
     },
     "mandu_frito": {
-      "name": "Mandu frito - Goon-mandu 군만두 (1 pers.)",
+      "name": "Goon Mandu - 군만두 (1 pers.)",
       "desc": "Empanadas coreanas rellenas de kimchi, buchu-cebollín o vegetales.",
       "includes": "4 Banchan (de acuerdo a disponibilidad)."
     },
     "gyeranjjim": {
-      "name": "Gyeranjjim - 계란찜 - Huevos explosivos",
+      "name": "Gyeranjjim - 계란찜",
       "desc": "Huevos al vapor de textura suave, esponjosa y ligera."
     },
     "sotbap": {
@@ -165,7 +165,7 @@
       "includes": "Nabo blanco encurtido."
     },
     "kimchi_bukeo_haejang_guk": {
-      "name": "Kimchi Bukeo Haejang Guk - 김치 해장국",
+      "name": "Kimchi Haejang Guk - 김치 해장국",
       "desc": "Estofado coreano picante para la resaca con germen de soya, pescado seco, kimchi y huevo frito cocido.",
       "includes": "Arroz al vapor y 4 Banchan (de acuerdo a disponibilidad)."
     },
@@ -180,24 +180,32 @@
       "includes": "4 Banchan (de acuerdo a disponibilidad)."
     },
     "sotbap_jeongsik": {
-      "name": "Sotbap Jeongsik - 솥밥 정식 (1 pers.)",
+      "name": "Sot Bap Jeonsik - 솥밥 정식 (1 pers.)",
       "desc": "Arroz integral, cebada integral, arroz glutinoso salvaje, sorgo, mijo y avena en olla de presión con calabaza dulce, edamame y hongo shitake, acompañado de bulgogi de res, daepa, zanahoria, cebolla y lechuga.",
       "includes": "Porción de arroz en olla de presión, bulgogi de res, lechuga y 4 Banchan (de acuerdo a disponibilidad)."
     },
     "ttukbul": {
-      "name": "Ttukbul - 뚝배기 불고기 (1 pers.)",
+      "name": "Tukbaegi Bulgogi - 뚝배기 불고기 (1 pers.)",
       "desc": "Estofado de bulgogi de res, cebolla, hongos setas y fideo transparente con base de salsa de soya.",
       "includes": "Arroz al vapor y 4 Banchan (de acuerdo a disponibilidad)."
     },
     "samgyup_ganjang_jorim": {
-      "name": "Samgyup Ganjang Jorim - 삼겹 간장조림",
+      "name": "Samgyeob Ganjang Jorim - 삼겹 간장조림",
       "desc": "Estofado de tocino de cerdo con arroz al vapor, col y cebolla en salsa de soya agridulce.",
       "includes": "4 Banchan (de acuerdo a disponibilidad)."
     },
     "la_galbi_yakiniku_style": {
-      "name": "LA Galbi Yakiniku Style - 엘에이 갈비 (1 pers.)",
+      "name": "L.A. Galbi (Yakiniku Style) - 엘에이 갈비 (1 pers.)",
       "desc": "250 g de costilla de res marinada en salsa de soya agridulce con zanahoria, cebolla y champiñón.",
       "includes": "4 Banchan (de acuerdo a disponibilidad). Si compran 2 porciones de $350.00 incluye Gyeranjjim - Huevos explosivos."
+    },
+    "moksal_ganjang_yangyeom": {
+      "name": "Moksal Ganjang Yangyeom - 목살 간장 양념",
+      "desc": "Consulta al personal para conocer la preparación, porción y disponibilidad actual."
+    },
+    "dongchimi_guksu": {
+      "name": "Dongchimi Guksu - 동치미국수",
+      "desc": "Consulta al personal para conocer la preparación, porción y disponibilidad actual."
     },
     "maeun_dwaeji_galbi_jjim": {
       "name": "Maeun Dwaeji Galbi Jjim - 매운 돼지갈비찜 (2 a 3 pers.)",
@@ -214,7 +222,7 @@
       "desc": "200 g de tocino de cerdo acompañado de germen de soya con chile en polvo coreano, nopales salteados picantes, cebolla, champiñones y kimchi."
     },
     "galbi_kimchi_jjim_2_3": {
-      "name": "Galbi Kimchi Jjim - 돼지갈비 김치찜 (2 a 3 pers.)",
+      "name": "Dweji Galbi Kimchijjim - 돼지갈비 김치찜 (2 a 3 pers.)",
       "desc": "5 trozos de costilla de cerdo (550 g) envueltos en kimchi con salsa de chile en polvo coreano, cebolla blanca negi y ajo.",
       "includes": "4 Banchan (de acuerdo a disponibilidad) para 2 a 3 personas."
     },
@@ -224,7 +232,7 @@
       "includes": "4 Banchan (de acuerdo a disponibilidad) para 3 a 4 personas."
     },
     "golbaengi_muchim_500": {
-      "name": "Golbaengi Muchim - 골뱅이무침",
+      "name": "Golbangi Muchim - 골뱅이무침",
       "desc": "Caracoles en salsa de pasta y chile rojo agridulce con cebolla blanca, pepino y cebollín, acompañados de fideos de trigo somyeon."
     },
     "golbaengi_muchim_700": {

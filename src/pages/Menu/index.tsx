@@ -42,7 +42,7 @@ export default function Menu() {
   ];
 
   const filteredItems = useMemo(() => {
-    return menuItems.filter((item) => activeCategory === 'all' || item.category === activeCategory);
+    return menuItems.filter((item) => item.isAvailable && (activeCategory === 'all' || item.category === activeCategory));
   }, [activeCategory]);
 
   const visibleSections = useMemo(() => {
@@ -211,44 +211,48 @@ export default function Menu() {
                           animate={{ opacity: 1, scale: 1 }}
                           exit={{ opacity: 0, scale: 0.98 }}
                           transition={{ duration: 0.25 }}
-                          className="brand-panel group overflow-hidden rounded-[28px] border border-primary/10 shadow-sm transition-all hover:-translate-y-1 hover:shadow-soft"
+                          className="group overflow-hidden rounded-[30px] border border-primary/10 bg-[linear-gradient(180deg,rgba(255,248,239,0.98),rgba(243,233,217,0.94))] shadow-sm transition-all hover:-translate-y-1.5 hover:shadow-soft"
                         >
-                          <div className="relative h-44 overflow-hidden bg-text-dark">
+                          <div className="relative aspect-[4/3] overflow-hidden bg-[#140f0d]">
                             <img
                               src={item.imageUrl}
                               alt={itemName}
-                              className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                              className="h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
                             />
-                            <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#120d0be6] to-transparent" />
-                            <div className="absolute right-4 top-4 rounded-full bg-primary px-3 py-1.5 text-sm font-bold text-secondary-light shadow-sm">
+                            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(18,13,11,0.06)_0%,rgba(18,13,11,0.18)_42%,rgba(18,13,11,0.72)_100%)]" />
+                            <div className="absolute right-4 top-4 rounded-full bg-[#f6e9d7]/92 px-3.5 py-1.5 text-sm font-black text-text-dark shadow-sm">
                               {item.price === null ? 'Consultar' : `$${item.price.toFixed(2)}`}
                             </div>
                             {item.badgesKeys.length > 0 && (
-                              <div className="absolute bottom-4 left-4 flex flex-wrap gap-2">
+                              <div className="absolute left-4 top-4 flex max-w-[70%] flex-wrap gap-2">
                                 {item.badgesKeys.map((badgeKey) => (
                                   <span
                                     key={badgeKey}
-                                    className="rounded-full bg-secondary-light/95 px-2.5 py-1 text-[10px] font-bold text-primary backdrop-blur-sm shadow-sm"
+                                    className="rounded-full border border-secondary/20 bg-[#201612]/78 px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-secondary-light backdrop-blur-sm shadow-sm"
                                   >
                                     {t(badgeKey)}
                                   </span>
                                 ))}
                               </div>
                             )}
+                            <div className="absolute inset-x-0 bottom-0 p-4">
+                              <h3 className="max-w-[85%] text-xl font-black uppercase leading-tight text-secondary-light md:text-2xl">
+                                {itemName}
+                              </h3>
+                            </div>
                           </div>
 
-                          <div className="flex h-full flex-col p-5">
-                            <h3 className="mb-3 text-xl font-bold leading-snug text-text-dark">
-                              {itemName}
-                            </h3>
-
-                            <p className="mb-4 text-sm leading-6 text-text">
+                          <div className="flex h-full flex-col gap-4 p-5 md:p-6">
+                            <p className="text-sm leading-6 text-text">
                               {itemDesc}
                             </p>
 
                             {itemIncludes && (
-                              <div className="mt-auto rounded-2xl border border-primary/10 bg-primary/5 px-4 py-3 text-sm leading-6 text-text">
-                                <span className="font-bold text-primary">Incluye:</span> {itemIncludes}
+                              <div className="mt-auto rounded-[22px] border border-primary/10 bg-primary/5 px-4 py-3 text-sm leading-6 text-text">
+                                <span className="mb-1 block text-[11px] font-black uppercase tracking-[0.18em] text-primary">
+                                  Incluye
+                                </span>
+                                {itemIncludes}
                               </div>
                             )}
                           </div>
